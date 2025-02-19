@@ -16,7 +16,7 @@ timezone: Asia/Shanghai
 
 title: 关键帧Keyframe # the main title
 
-tagline: 专注于音视频、AI 等领域的技术分享。Sharing Audio&Video, AI technologies. # it will display as the subtitle
+tagline: 分享音视频、AI 技术。</br>Sharing Audio/Video, AI technologies. # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Our blog focuses on sharing technologies about 'Audio & Video Development', 'AI'.
