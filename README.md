@@ -2,7 +2,7 @@
 
 关注我们的微信公众号来订阅最新的文章：
 
-![微信公众号](./assets/img/keyframe-qrcode.jpg)
+![微信公众号](./assets/img/keyframe-mp.jpg)
 
 
 <!-- 

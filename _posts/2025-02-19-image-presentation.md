@@ -5,11 +5,16 @@ author: Keyframe
 date: 2025-02-19 12:21:00 +0800
 categories: [音视频基础知识]
 tags: [音视频基础知识, 音视频, 图像]
-pin: true
+pin: false
 math: true
 mermaid: true
 ---
 
+> 本文转自微信公众号 `关键帧Keyframe`，推荐您关注来获取**音视频**、**AI** 领域的最新技术和产品信息：
+>
+>![微信公众号](assets/img/keyframe-mp.jpg)
+_微信扫码关注我们_
+{: .prompt-tip }
 
 
 （本文基本逻辑：图像的定义是什么 → 图像成像的原理是什么 → 怎样对图像进行数学描述 → 怎样对图像进行数字化 → 数字图像数据是什么）

@@ -6,9 +6,13 @@
 - type: twitter
   icon: "fa-brands fa-x-twitter"
 
-- type: email
-  icon: "fas fa-envelope"
-  noblank: true # open link in current tab
+# - type: email
+#   icon: "fas fa-envelope"
+#   noblank: true # open link in current tab
+
+- type: weixin
+  icon: "fa-brands fa-weixin"
+  url: '/about'
 
 - type: rss
   icon: "fas fa-rss"
