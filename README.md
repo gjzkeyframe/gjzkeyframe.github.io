@@ -1,7 +1,14 @@
-<!-- markdownlint-disable-next-line -->
+# Blog
+
+关注我们的微信公众号来订阅最新的文章：
+
+![微信公众号](./assets/img/keyframe-qrcode.jpg)
+
+
+<!-- 
 <div align="center">
 
-  <!-- markdownlint-disable-next-line -->
+  
   # Chirpy Jekyll Theme
 
   A minimal, responsive, and feature-rich Jekyll theme for technical writing.
@@ -82,3 +89,5 @@ This project is published under [MIT License][license].
 [lib]: https://github.com/cotes2020/chirpy-static-assets
 [vscode]: https://code.visualstudio.com/
 [jetbrains]: https://www.jetbrains.com/?from=jekyll-theme-chirpy
+
+-->
