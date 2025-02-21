@@ -535,5 +535,5 @@ onMetadata 包含着不同的属性，这些属性对于不同的 FLV 文件可�
 - [Adobe Flash Video File Format Specification](https://www.adobe.com/content/dam/acom/en/devnet/flv/video_file_format_spec_v10_1.pdf)
 - [基于 libRTMP 的流媒体直播之 AAC、H264 推送](https://blog.51cto.com/billhoo/1557646)
 - [RTMP 协议发送 H.264 编码及 AAC 编码的音视频](https://www.cnblogs.com/haibindev/archive/2011/12/29/2305712.html)
-- [ISO IEC 14496-15-2017](http://www.doc88.com/p-8951310719017.html)
+- [ISO IEC 14496-15-2017](https://www.doc88.com/p-8951310719017.html)
 
