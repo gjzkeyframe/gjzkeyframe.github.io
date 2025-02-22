@@ -326,7 +326,7 @@ $ ./dump.py -b com.XXX.YYY
 等待自动砸壳传输完成之后便会到当前目录生成一个解密后的 ipa 文件。
 
 
-更多的细节你还可以参考：[一条命令完成砸壳](http://www.alonemonkey.com/2018/01/30/frida-ios-dump/ "一条命令完成砸壳")。
+更多的细节你还可以参考：[一条命令完成砸壳](https://www.alonemonkey.com/2018/01/30/frida-ios-dump/ "一条命令完成砸壳")。
 
 
 
