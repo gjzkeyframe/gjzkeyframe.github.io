@@ -102,7 +102,7 @@ _YUVView: Overlay Statistics_
 ![YUVView: Inspecting Differences](assets/resource/av-tool/yuvview-3-min.gif)
 _YUVView: Inspecting Differences_
 
-更多的信息参见：[YUVView Introduction](http://ient.github.io/YUView/ "YUVView Introduction")
+更多的信息参见：[YUVView Introduction](https://ient.github.io/YUView/ "YUVView Introduction")
 
 
 
