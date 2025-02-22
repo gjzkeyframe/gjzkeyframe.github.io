@@ -424,7 +424,7 @@ RTMP 的消息类型分为：
 | audioCodecs     | Number  | Indicates what audio codecs the client supports.             | SUPPORT_SND_MP3                         |
 | videoCodecs     | Number  | Indicates what video codecs are supported.                   | SUPPORT_VID_SORENSON                    |
 | videoFunction   | Number  | Indicates what special video functions are supported.        | SUPPORT_VID_CLIENT_SEEK                 |
-| pageUrl         | String  | URL of the web page from where the SWF file was loaded.      | http://somehost/sample.html             |
+| pageUrl         | String  | URL of the web page from where the SWF file was loaded.      | https://somehost/sample.html             |
 | object Encoding | Number  | AMF encoding method.                                         | AMF3                                    |
 
 

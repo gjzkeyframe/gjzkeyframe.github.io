@@ -329,21 +329,21 @@ FFmpeg 操作 HTTP 使用的参数：
 示例：拉取并录制 FLV 直播流。
 
 ```
-$ ffmpeg -i http://www.abc.com/live.flv -c copy -f flv output.flv
+$ ffmpeg -i https://www.abc.com/live.flv -c copy -f flv output.flv
 ```
 
 
 示例：拉取 TS 直播流流录制为 FLV。
 
 ```
-$ ffmpeg -i http://www.abc.com/live.ts -c copy -f flv output.flv
+$ ffmpeg -i https://www.abc.com/live.ts -c copy -f flv output.flv
 ```
 
 
 示例：拉取 HLS 直播流流录制为 FLV。
 
 ```
-$ ffmpeg -i http://www.abc.com/live.m3u8 -c copy -f flv output.flv
+$ ffmpeg -i https://www.abc.com/live.m3u8 -c copy -f flv output.flv
 ```
 
 
@@ -925,7 +925,7 @@ ffmpeg -i slow_play.mp4 -movflags faststart fast_play.mp4
 
 
 ```
-ffprobe -of csv -show_frames -select_streams v http://www.example.com/1.flv > video_frames_info.csv
+ffprobe -of csv -show_frames -select_streams v https://www.example.com/1.flv > video_frames_info.csv
 ```
 
 
