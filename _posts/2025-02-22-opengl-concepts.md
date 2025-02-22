@@ -55,7 +55,8 @@ OpenGL 已经发展了 25 年以上，不断满足着行业需求。但是，随
 
 OpenGL 不能开发程序、构建后台，它只是一套处理图形图像的统一规则。它在一个图形应用程序中的角色大致如下图所示：
 
-![OpenGL 在图形应用中的角色（iOS）](assets/resource/render-opengl-1.png)
+![OpenGL 在图形应用中的角色（iOS）](assets/resource/av-basic-knowledge/render-opengl-1.png)
+_OpenGL 在图形应用中的角色（iOS）_
 
 上图是基于 iOS 平台的，图中的 `Core Graphics`、`Core Animation`、`Core Image` 是 iOS 平台封装的绘制相关的上层 API，在 Android 平台则是其他的 API，这里不必深究。
 
@@ -68,14 +69,16 @@ OpenGL 不能开发程序、构建后台，它只是一套处理图形图像的�
 
 OpenGL 的渲染架构是 **Client/Server 模式**：Client（客户端）指的是我们在 CPU 上运行的一些代码，比如我们会编写 OC/C++/Java 代码调用 OpenGL 的一些 API；而 Server（服务端）则对应的是图形渲染管线，会调用 GPU 芯片。我们开发的过程就是不断用 Client 通过 OpenGL 提供的通道去向 Server 端传输渲染指令，来间接的操作 GPU 芯片。
 
-![OpenGL 渲染架构](assets/resource/render-opengl-2.png)
+![OpenGL 渲染架构](assets/resource/av-basic-knowledge/render-opengl-2.png)
+_OpenGL 渲染架构_
 
 
 渲染架构的 Client 和 Server 是怎么通信和交互的呢？这又涉及到 C/S **通道**的设计，下面我们来接着介绍，不过这里会提到一些你可能不太熟悉的名词，可以先不用深究，有个印象就可以了。
 
 OpenGL 提供了 3 个通道来让我们从 Client 向 Server 中的顶点着色器（Vertex Shader）和片元着色器（Fragment Shader）传递参数和渲染信息，如下图所示：
 
-![OpenGL 渲染架构及数据交互通道](assets/resource/render-opengl-3.png)
+![OpenGL 渲染架构及数据交互通道](assets/resource/av-basic-knowledge/render-opengl-3.png)
+_OpenGL 渲染架构及数据交互通道_
 
 
 这 3 个通道分别是：
@@ -102,7 +105,8 @@ OpenGL 提供了 3 个通道来让我们从 Client 向 Server 中的顶点着色
 
 电梯只有静止的时候才能开门，只有开门之后才能关门，只有关门之后才可以运动，只有运动之后才可以静止，所以，可以说电梯的各个状态是有依赖关系的，换种更专业的说法，就是各种状态可以通过有向图来表示。
 
-![电梯状态图](assets/resource/render-opengl-4.png)
+![电梯状态图](assets/resource/av-basic-knowledge/render-opengl-4.png)
+_电梯状态图_
 
 电梯不能随意从一个状态跳转到另一个状态，比如：不能在运动过程中开门。
 
@@ -134,11 +138,13 @@ glBindVertexArray(0);
 
 所以我们可以用状态图来表示上面的代码如下：
 
-![示例代码状态图](assets/resource/render-opengl-5.png)
+![示例代码状态图](assets/resource/av-basic-knowledge/render-opengl-5.png)
+_示例代码状态图_
 
 不过 OpenGL 的状态是可以**嵌套**的，所以细看上面的代码，我们还能看到这里状态存在包含关系，因为一个 VBO 会被绑定于一个 VAO 中，所以用下图来看会更加直观：
 
-![状态嵌套示例](assets/resource/render-opengl-6.png)
+![状态嵌套示例](assets/resource/av-basic-knowledge/render-opengl-6.png)
+_状态嵌套示例_
 
 通俗来说就是，执行了绑定 X 到解绑 X 之间的任何操作，都会影响到 X。
 
@@ -159,25 +165,30 @@ glBindVertexArray(0);
 
 第一步，可能是先确定三角形三个顶点的位置：
 
-![三角形绘制流程 1](assets/resource/render-opengl-7.png)
+![三角形绘制流程 1](assets/resource/av-basic-knowledge/render-opengl-7.png)
+_三角形绘制流程 1_
 
 第二步，自然是将三个点用线段连起来：
 
-![三角形绘制流程 2](assets/resource/render-opengl-8.png)
+![三角形绘制流程 2](assets/resource/av-basic-knowledge/render-opengl-8.png)
+_三角形绘制流程 2_
 
 第三步，你可能觉得这样的三角形太过于单调，于是准备给三角形上色，因为是在屏幕上的，而屏幕本质用是一个个像素来显示颜色的，所以上色之前要先确定好哪些像素是属于三角形的，于是你叫计算机把属于三角形内部的像素一个个圈出来：
 
-![三角形绘制流程 3](assets/resource/render-opengl-9.png)
+![三角形绘制流程 3](assets/resource/av-basic-knowledge/render-opengl-9.png)
+_三角形绘制流程 3_
 
 第四步，你想画一个带渐变色的炫酷三角形，所以需要给每个像素都上不同的颜色，于是你给一个个像素精心上色：
 
-![三角形绘制流程 4](assets/resource/render-opengl-10.png)
+![三角形绘制流程 4](assets/resource/av-basic-knowledge/render-opengl-10.png)
+_三角形绘制流程 4_
 
 这样下来，一个漂亮的三角形就画出来了。回想这个过程，其实就像工厂的流水线一样，将整个工作拆解成一步一步实现即可。
 
 OpenGL 的渲染管线其实也是类似的一个过程，它的工序包括：**顶点着色器 → 图元装配 → 几何着色器 → 光栅化 → 片段着色器 → 测试与混合**。
 
-![OpenGL 渲染管线](assets/resource/render-opengl-11.png)
+![OpenGL 渲染管线](assets/resource/av-basic-knowledge/render-opengl-11.png)
+_OpenGL 渲染管线_
 
 这些工序是将输入的 3D 的坐标，转化为显示在屏幕上的 2D 的像素的一个处理流程。
 
@@ -206,7 +217,8 @@ OpenGL 的渲染管线其实也是类似的一个过程，它的工序包括：*
 
 下图是 OpenGL 支持的图元类型：
 
-![OpenGL 图元类型](assets/resource/render-opengl-12.png)
+![OpenGL 图元类型](assets/resource/av-basic-knowledge/render-opengl-12.png)
+_OpenGL 图元类型_
 
 
 **3）光栅化**
@@ -227,14 +239,16 @@ OpenGL 的渲染管线其实也是类似的一个过程，它的工序包括：*
 
 深度测试是在显示 3D 图形的时候，根据片段的深度来防止被阻挡的面渲染到其它面的前面。这里是 OpenGL 内部维护一个**深度缓冲**，保存这一帧中深度最小的片段的深度，然后对屏幕同一个位置的其他片段的深度再进行比较，深度比缓冲中大的片段则丢弃，直到找到深度最小的片段，就将其显示出来。
 
-![深度测试](assets/resource/render-opengl-13.png)
+![深度测试](assets/resource/av-basic-knowledge/render-opengl-13.png)
+_深度测试_
 
 上图中每个方格表示一个片段，片段上的数值表示当前片段的深度，R 则表示深度无限，加号表示 2 个图形叠加一起，则由下面部分的图可知，当 2 个图形叠加在一起的时候，同一个位置的片段总是显示深度较小的那一个。
 
 
 模板缓冲区是用于控制屏幕需要显示的内容，屏幕大小决定了模板缓冲区大小；模板测试基于**模板缓冲区**，从而让我们完成想要的效果。模板测试类似于**与运算**：
 
-![模板测试](assets/resource/render-opengl-14.png)
+![模板测试](assets/resource/av-basic-knowledge/render-opengl-14.png)
+_模板测试_
 
 
 上图可以看出，模板就是每个片段位置有 0 也有 1，然后和缓冲中的图像数据对应片段进行类似与运算，也类似与拿一个遮罩罩住，只留下 1 的对应片段显示出来。
@@ -243,7 +257,8 @@ OpenGL 的渲染管线其实也是类似的一个过程，它的工序包括：*
 
 混合则是**计算带有透明度的片段的最终颜色**，在这个阶段会与显示在它背后的片段的颜色按照透明度进行叠加行成新的颜色，通俗讲就是形成透明物体的效果。
 
-![混合](assets/resource/render-opengl-15.png)
+![混合](assets/resource/av-basic-knowledge/render-opengl-15.png)
+_混合_
 
 由图可以看出，通过混合，右边的窗户既有部分自己的颜色，又有窗户里面物体的部分颜色，就是两者透明度按照比例叠加的结果。
 
@@ -281,14 +296,16 @@ OpenGL 的渲染管线其实也是类似的一个过程，它的工序包括：*
 
 **EGL 是 OpenGL ES 与设备的桥梁，以实现让 OpenGL ES 能够在当前设备上进行绘制。**
 
-![EGL 架构](assets/resource/render-opengl-17.png)
+![EGL 架构](assets/resource/av-basic-knowledge/render-opengl-17.png)
+_EGL 架构_
 
 
 ### 6.1、Android EGL
 
 Android 平台自 2.0 版本之后图形系统的底层渲染均由 OpenGL ES 负责，其 EGL 架构实现如下图所示：
 
-![Android EGL 架构](assets/resource/render-opengl-16.png)
+![Android EGL 架构](assets/resource/av-basic-knowledge/render-opengl-16.png)
+_Android EGL 架构_
 
 
 - **Display** 是对实际显示设备的抽象。在 Android 上的实现类是 `EGLDisplay`。
@@ -343,12 +360,14 @@ iOS 平台对 EGL 的实现是 **EAGL（Embedded Apple Graphics Library）**。O
 
 OpenGL ES 通过 CAEAGLLayer 与 Core Animation 连接，CAEAGLLayer 是一种特殊类型的 Core Animation 图层，它的内容来自 OpenGL ES 的 RenderBuffer，Core Animation 将 RenderBuffer 的内容与其他图层合成，并在屏幕上显示生成的图像。所以同一时刻可以有任意数量的层。Core Animation 合成器会联合这些层并在后帧缓存中产生最终的像素颜色，然后切换缓存。
 
-![Core Animation 与 OpenGL ES 共享 RenderBuffer](assets/resource/render-opengl-18.png)
+![Core Animation 与 OpenGL ES 共享 RenderBuffer](assets/resource/av-basic-knowledge/render-opengl-18.png)
+_Core Animation 与 OpenGL ES 共享 RenderBuffer_
 
 
 一个应用提供的图层与操作系统提供的图层混合起来可以产生最终的显示外观。如下图所示，OpenGL ES 图层显示了一个应用生成的旋转立方体，但是在显示器顶部的显示状态栏图层则是由操作系统生成和控制的，此图显示的是合并两个图层来产生后帧缓存中的颜色数据的过程，交换后，我们看到的就是前帧缓存上的内容。
 
-![iOS 多图层合成](assets/resource/render-opengl-19.png)
+![iOS 多图层合成](assets/resource/av-basic-knowledge/render-opengl-19.png)
+_iOS 多图层合成_
 
 
 所以，iOS 的 EAGL 配置过程其实就是使用 CoreAnimation 的 layer 来支持 OpenGL ES 渲染的过程，步骤大致如下：
@@ -573,16 +592,19 @@ glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
 这时候对应的 VBO 布局格式如下图所示：
 
-![VBO 布局格式](assets/resource/render-opengl-20.png)
+![VBO 布局格式](assets/resource/av-basic-knowledge/render-opengl-20.png)
+_VBO 布局格式_
 
 
 当 VAO 只管理 VBO 时，布局格式如下图所示：
 
-![VAO 管理 VBO 布局格式](assets/resource/render-opengl-21.png)
+![VAO 管理 VBO 布局格式](assets/resource/av-basic-knowledge/render-opengl-21.png)
+_VAO 管理 VBO 布局格式_
 
 当 VAO 管理 VBO 和 EBO 时，布局格式如下图所示：
 
-![VAO 管理 VBO 和 EBO 布局格式](assets/resource/render-opengl-22.png)
+![VAO 管理 VBO 和 EBO 布局格式](assets/resource/av-basic-knowledge/render-opengl-22.png)
+_VAO 管理 VBO 和 EBO 布局格式_
 
 
 
@@ -610,7 +632,8 @@ FBO 是用来做什么的呢？
 
 FBO 虽然也叫缓冲区对象，但是它并不是一个真正的缓冲区，因为 OpenGL 并没有为它分配存储空间去存储渲染所需的几何、像素数据，我们可以认为它是一个指针的集合，这些指针指向了颜色缓冲区、深度缓冲区、模板缓冲区、累积缓冲区等这些真正的缓冲区对象，我们把这里的『指向关系』叫做**附着**，而 FBO 中的附着点类型有：**颜色附着**、**深度附着**和**模板附着**。这些附着点指向的缓冲区通常包含在某些对象里，我们把这些对象叫做**附件**，附件的类型有：**纹理（Texture）**或**渲染缓冲区对象（Render Buffer Object，RBO）**。
 
-![FBO 的附件和附着点](assets/resource/render-opengl-23.jpg)
+![FBO 的附件和附着点](assets/resource/av-basic-knowledge/render-opengl-23.jpg)
+_FBO 的附件和附着点_
 
 
 - **纹理（Texture）**是一个可以往上绘制细节的 2D 图片（甚至也有 1D 和 3D 的纹理），你可以想象纹理是一张绘有砖块的纸，无缝折叠贴合到你的 3D 的房子上，这样你的房子看起来就像有砖墙外表一样了。除了图像以外，纹理也可以被用来储存大量的数据，这些数据可以发送到着色器上进行计算和处理。

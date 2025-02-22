@@ -86,11 +86,11 @@ _微信扫码关注我们_
 
 **H.264 中，句法元素可以分为『序列』、『图像』、『片』、『宏块』、『子宏块』五个层次。**
 
-![image](assets/resource/av-encode-h264-14.png)
+![](assets/resource/av-basic-knowledge/av-encode-h264-14.png)
 
 在 H.264 中，分层结构相较之前最大的不同是取消了序列层和图像层，并**将原本属于序列和图像头部的大部分句法元素游离出来形成序列和图像两级参数集**，其余的部分则放入片层。在这种机制下，由于参数集是独立的，可以被多次重发或者采用特殊技术加以保护。参数集与参数集外部的句法元素处于不同信道中，这是 H.264 的一个建议，我们可以使用更安全但成本更昂贵的通道来传输参数集。
 
-![image](assets/resource/av-encode-h264-22.png)
+![](assets/resource/av-basic-knowledge/av-encode-h264-22.png)
 
 
 
@@ -208,14 +208,14 @@ B 帧编码的基本流程：
 
 >**视频编码中的率失真曲线**：为了研究视频码率与视频质量的平衡。由于系统性，不能达到理论上的 R(D) 值，只能由不同的编码参数（如 QP 和选择的模式）得到有限的 (R, D) 可操作点，形成凸包络。
 
->![image](assets/resource/av-encode-video-2.png)
+>![](assets/resource/av-basic-knowledge/av-encode-video-2.png)
 
 >**视频编码中的率失真优化（RDO）**：遍历所有的参数候选模式对视频进行编码，满足码率限制的失真最小的一组参数集作为最优的视频编码参数。每一层级都找出，最终使整体系统性能最优。这里假设了无相关性的独立优化，如相关性较强则共同优化。
 
 <!-- 
 >**拉格朗日因子法**：`min {D + λR}`。λ 的确定方法和 QP 有较固定的函数关系。速率控制根据分配的码率预测 CU 的 QP，然后利用 QP 与 λ 之间的映射关系确定出合适的 λ。目前，近年来提出了根据限定码率直接计算 λ 的方法得以应用。λ 的几何意义即斜率。缺点：只能取到斜率一致的凸包络上的点，如更优的 B 点无法取到。
 
->![image](assets/resource/av-encode-video-3.png)
+>![](assets/resource/av-basic-knowledge/av-encode-video-3.png)
 -->
 
 
@@ -250,7 +250,7 @@ Stream: I P B B
 
 H.264 使用的是封闭 GOP（Closed GOP），即在一个 GOP 中所有帧的解码不依赖该 GOP 外的其他帧，除了第一帧必须是 I 帧，其他帧可以是 P 帧或 B 帧。
 
-![image](assets/resource/av-encode-h264-7.png)
+![](assets/resource/av-basic-knowledge/av-encode-h264-7.png)
 
 上图中是一个 GOP 为 15 帧的例子，如果视频的帧率是 15 fps，那么这个 GOP 就是 1s 时长。
 
@@ -304,7 +304,7 @@ H.264 引入 IDR 帧是为了解码的重同步，当解码器解码到 IDR 帧�
 
 **H.264 的主要目标是为了有高的视频压缩比和良好的网络亲和性，为了达成这两个目标，H.264 的解决方案是将系统框架分为两个层面：『视频编码层面（VCL）』和『网络抽象层面（NAL）』。**
 
-![image](assets/resource/av-encode-h264-8.png)
+![](assets/resource/av-basic-knowledge/av-encode-h264-8.png)
 
 
 - **视频编码层（VCL）**，是对视频编码核心算法过程、子宏块、宏块、片等概念的定义。这层主要是为了尽可能的独立于网络来高效的对视频内容进行编码。编码完成后，输出的数据是 SODB（String Of Data Bits）。
@@ -314,19 +314,19 @@ H.264 引入 IDR 帧是为了解码的重同步，当解码器解码到 IDR 帧�
 
 从视频编码层（VCL）角度去看 H.264 的结构：
 
-![image](assets/resource/av-encode-h264-12.png)
+![](assets/resource/av-basic-knowledge/av-encode-h264-12.png)
 
-![image](assets/resource/av-encode-h264-13.png)
+![](assets/resource/av-basic-knowledge/av-encode-h264-13.png)
 
 
 
 从网络适配层（NAL）角度去看 H.264 的结构：
 
-![image](assets/resource/av-encode-h264-9.png)
+![](assets/resource/av-basic-knowledge/av-encode-h264-9.png)
 
-![image](assets/resource/av-encode-h264-10.png)
+![](assets/resource/av-basic-knowledge/av-encode-h264-10.png)
 
-![image](assets/resource/av-encode-h264-11.png)
+![](assets/resource/av-basic-knowledge/av-encode-h264-11.png)
 
 
 
@@ -339,13 +339,13 @@ H.264 引入 IDR 帧是为了解码的重同步，当解码器解码到 IDR 帧�
 
 下图为一个典型的视频编码器。在进行当前信号编码时，编码器首先会产生对当前信号做预测的信号，称作**预测信号**（Predicted Signal），预测的方式可以是时间上的帧间预测（Inter Prediction），亦即使用先前帧的信号做预测，或是空间上的帧内预测（Intra Prediction），亦即使用同一张帧之中相邻像素的信号做预测。得到预测信号后，编码器会将当前信号与预测信号相减得到**残差信号**（Residual Signal），并只对残差信号进行编码，如此一来，可以去除一部分时间上或是空间上的冗余信息。接着，编码器并不会直接对残差信号进行编码，而是先将残差信号经过**变换**（通常为离散余弦变换）然后**量化**以进一步去除空间上和感知上的冗余信息。量化后得到的量化系数会再透过**熵编码**，去除统计上的冗余信息。
 
-![image](assets/resource/av-encode-video-1.png)
+![](assets/resource/av-basic-knowledge/av-encode-video-1.png)
 
 
 
 H.264 的编解码流程如下：
 
-![image](assets/resource/av-encode-h264-1.png)
+![](assets/resource/av-basic-knowledge/av-encode-h264-1.png)
 
 
 
@@ -432,7 +432,7 @@ H.264 最后将结果进行熵编码，分为`上下文自适应的变长编码�
 
 H.264 原始码流（又称为裸流），是由一个接一个的 NAL 单元组成的（NAL Header 加上 RBSP 组成一个 NAL 单元），结构如下图所示：
 
-![image](assets/resource/av-encode-h264-2.png)
+![](assets/resource/av-basic-knowledge/av-encode-h264-2.png)
 
 
 在网络传输的环境下，编码器将每个 NAL 各自独立、完整地放入一个分组，由于分组都有头部，解码器可以很方便地检测出 NAL 的分界，依次取出 NAL 进行解码。为了节省码流，H.264 没有另外在 NAL 的头部设立表示起始的句法元素。但是如果编码数据是储存在介质（如 DVD 光盘）上，由于 NAL 是依次紧密排列，解码器将无法在数据流中分辨每个 NAL 的起始和终止，所以必须要有另外的机制来解决这个问题。
@@ -469,13 +469,13 @@ NAL 单元由 NAL Header 和 RBSP 构成。
 
 NAL Header 的结构如下：
 
-![image](assets/resource/av-encode-h264-3.png)
+![](assets/resource/av-basic-knowledge/av-encode-h264-3.png)
 
 - `forbidden_zero_bit`，第 0 位，表示禁止位，一般为值为 0，值为 1 表示语法错误。
 - `nal_ref_idc`，第 1-2 位，表示当前 NAL 的优先级。取值范围为 0-3，值越高，表示当前 NAL 越重要，需要优先受到保护。H.264 规定如果当前 NAL 是属于参考帧的片，或是序列参数集，或是图像参数集这些重要的数据单位时，本句法元素必须大于 0。但在大于 0 时具体该取何值，却没有进一步规定，通信双方可以灵活地制定策略。
 - `nal_unit_type`，第 3-7 位，表示当前 NAL 单元的类型。具体类型定义如下表：
 
-![image](assets/resource/av-encode-h264-15.png)
+![](assets/resource/av-basic-knowledge/av-encode-h264-15.png)
 
 `nal_unit_type=5` 时，表示当前 NAL 是 IDR 图像的一个片，在这种情况下，IDR 图像中的每个片的 `nal_unit_type` 都应该等于 5。注意 IDR 图像不能使用片分区。
 
@@ -510,10 +510,10 @@ NAL Header 的结构如下：
 
 序列参数集、图像参数集与图像、片之间的关系：
 
-![image](assets/resource/av-encode-h264-16.png)
+![](assets/resource/av-basic-knowledge/av-encode-h264-16.png)
 
 
-![image](assets/resource/av-encode-h264-17.png)
+![](assets/resource/av-basic-knowledge/av-encode-h264-17.png)
 
 
 **1）序列参数集 SPS**
@@ -525,7 +525,7 @@ SPS 中的信息至关重要，如果其中的数据丢失，解码过程就可�
 - 解码器要在码流中间开始解码。比如，直播流。
 - 编码器在编码过程中改变了码率的参数。比如，图像的分辨率。
 
-![image](assets/resource/av-encode-h264-18.jpg)
+![](assets/resource/av-basic-knowledge/av-encode-h264-18.jpg)
 
 SPS 其中的关键参数包括：
 
@@ -555,7 +555,7 @@ SPS 其中的关键参数包括：
 
 **PPS 中保存了每一帧编码后的图像所依赖的参数。**
 
-![image](assets/resource/av-encode-h264-19.jpg)
+![](assets/resource/av-basic-knowledge/av-encode-h264-19.jpg)
 
 PPS 其中的关键参数包括：
 
@@ -610,7 +610,7 @@ SEI 是一种 NAL 单元类型。它的结构大致如下：
 
 片的结构:
 
-![image](assets/resource/av-encode-h264-5.png)
+![](assets/resource/av-basic-knowledge/av-encode-h264-5.png)
 
 
 
@@ -618,12 +618,12 @@ Slice 中的关键参数包括：
 
 - `slice_type`，表示当前片的类型。具体类型如下。其中，IDR 图像时，`slice_type` 等于 2、4、7、9。
 
-![image](assets/resource/av-encode-h264-20.png)
+![](assets/resource/av-basic-knowledge/av-encode-h264-20.png)
 
 - `pic_parameter_set_id`，表示引用的 PPS 的 id。
 - `frame_num`，表示解码顺序。每个参考帧都有一个依次连续的 `frame_num` 作为它们的标识，这指明了各图像的解码顺序。但事实上非参考帧的片头也会出现 `frame_num`。只是当该个图像是参考帧时，它所携带的这个句法元素在解码时才有意义。H.264 对 `frame_num` 的值作了如下规定：当参数集中的句法元素 `gaps_in_frame_num_value_allowed_flag` 不为 1 时，每个图像的 `frame_num` 值是它前一个参考帧的 `frame_num` 值增加 1。
 
-![image](assets/resource/av-encode-h264-21.png)
+![](assets/resource/av-basic-knowledge/av-encode-h264-21.png)
 
 
 - `field_pic_flag`，这是在片层标识图像编码模式的唯一一个句法元素。所谓的编码模式是指的帧编码、场编码、帧场自适应编码。
@@ -657,9 +657,9 @@ Slice 中的关键参数包括：
 
 H.265 的标准编码框架如图所示：
 
-![image](assets/resource/av-encode-h265-1.png)
+![](assets/resource/av-basic-knowledge/av-encode-h265-1.png)
 
-![image](assets/resource/av-encode-h265-2.png)
+![](assets/resource/av-basic-knowledge/av-encode-h265-2.png)
 
 从根本上讲，H.265 视频编码标准的编码框架并没有革命性的改变，仍旧采用混合编码框架，包括帧内预测、帧间预测、变换量化、环路滤波、熵编码等模块。但是，H.265 几乎在每个模块都引入了新的编码技术。
 
@@ -676,27 +676,27 @@ H.265 的标准编码框架如图所示：
 
 该模块通过对残差数据进行变换量化以去除频域相关性，对数据进行有损压缩。变换编码将图像从时域信号变换至频域，将能量集中至低频区域。量化模块可以减小图像编码的动态范围。变换编码和量化模块从原理上属于两个相互独立的过程，**但是在 H.265 中，两个过程相互结合，减少了计算复杂度。量化部分整体和 H.264 相似，支持加权量化矩阵（自定义量化矩阵）**。
 
-![image](assets/resource/av-encode-h265-8.png)
+![](assets/resource/av-basic-knowledge/av-encode-h265-8.png)
 
 
 #### 2.1.4、环路滤波/去方块滤波（Deblocking）
 
 去方块滤波（Deblocking）在基于块的视频编码中，形成的重构图像会出现方块效应，采用去方块滤波可达到削弱甚至消除方块效应的目的，提高图像的主观质量和压缩效率。**H.265 仍然是基于块的视频编码，因此延续了环内去方块滤波的思路。在 TU/PU 块边界进行滤波，根据 MV、QP 等决定不同滤波强度**。
 
-![image](assets/resource/av-encode-h265-9.png)
+![](assets/resource/av-basic-knowledge/av-encode-h265-9.png)
 
 
 #### 2.1.5、环路滤波/样点自适应补偿滤波（SAO）
 
 样点自适应补偿滤波（Sample Adaptive Offset，SAO）处于去方块滤波之后，通过解析去方块滤波后的像素的统计特性，为像素添加相应的偏移值，可以在一定程度上削弱振铃效应，提高图像的主观质量和压缩效率。**SAO 是 H.265 新增的一项编码方式**。
 
-![image](assets/resource/av-encode-h265-10.png)
+![](assets/resource/av-basic-knowledge/av-encode-h265-10.png)
 
 #### 2.1.6、熵编码
 
 该模块将编码控制数据、量化变换系数、帧内预测数据以及运动数据等编码为二进制流进行存储或传输。熵编码模块的输出数据即原始视频压缩后的码流。**H.265 中采用先进的基于上下文的自适应二进制算术编码（CABAC）进行熵编码，引入了并行处理架构（Slice/Tile、WPP），在速度、压缩率和内存占用等方面均得到了大幅改善**。
 
-![image](assets/resource/av-encode-h265-11.png)
+![](assets/resource/av-basic-knowledge/av-encode-h265-11.png)
 
 
 
@@ -719,7 +719,7 @@ H.264 标准中的核心编码单元是『宏块』，包含一个 16x16 的亮�
 - CTU 可以根据实际编码决策，按照四叉树划分为更小的编码单元（CU）；
 - 每一个叶节点的 CU 可以选择帧内编码或者帧间编码。
 
-![image](assets/resource/av-encode-h265-3.png)
+![](assets/resource/av-basic-knowledge/av-encode-h265-3.png)
 
 
 预测单元的划分：
@@ -728,7 +728,7 @@ H.264 标准中的核心编码单元是『宏块』，包含一个 16x16 的亮�
 - 预测单元 PU 是帧内预测、帧间预测的基本单元；
 - PU 的划分包括 4 中对称结构和 4 种非对称结构。
 
-![image](assets/resource/av-encode-h265-4.png)
+![](assets/resource/av-basic-knowledge/av-encode-h265-4.png)
 
 
 变换单元的划分：
@@ -738,14 +738,14 @@ H.264 标准中的核心编码单元是『宏块』，包含一个 16x16 的亮�
 
 **大尺寸离散余弦变换是 H.265 视频编码标准中提升编码效率的重要技术之一。在 H.264 中仅采用了 4x4/8x8 的 DCT 变换。而在 H.265 中 DCT 变换的最大尺寸为 32x32，这种大尺寸变换单元的选择可以使编码器在处理高分辨率画面中经常出现平坦区域时能够更好地提高压缩率。**
 
-![image](assets/resource/av-encode-h265-5.png)
+![](assets/resource/av-basic-knowledge/av-encode-h265-5.png)
 
 
 #### 2.2.2、改进的帧内预测技术
 
 H.264 基于 4x4 大小的编码块采用 9 种预测模式，基于 16x16 大小的编码块采用 4 种预测模式。考虑高清视频纹理的多样性，只采用 H.264 中提供的几种帧内预测模式是远远不够的。为了更准确地反映纹理特性，降低预测误差，H.265 共提供了 35 种帧内预测模式，包括 33 种角度预测以及 DC 预测模式和 Planar 预测模式。**增加的预测模式可以更好地匹配视频中复杂的纹理，得到更好的预测效果，更加有效地去除空间冗余。**
 
-![image](assets/resource/av-encode-h265-6.png)
+![](assets/resource/av-basic-knowledge/av-encode-h265-6.png)
 
 
 
@@ -756,7 +756,7 @@ H.264 基于 4x4 大小的编码块采用 9 种预测模式，基于 16x16 大�
 - Merge 技术利用空域相关性和时域相关性来减少相邻块之间的运动参数冗余，具体来说，就是取其相邻 PU 的运动参数作为当前 PU 的运动参数。
 - AMVP 技术的作用与 Merge 技术类似，也是利用空域相关性和时域相关性来减少运动参数的冗余。AMVP 技术得到的运动矢量一方面为运动估计提供搜索起点，另一方面作为预测运动矢量使用。AMVP 根据周围块预测运动矢量，MV = MVP(预测矢量) + MVD(矢量差值)。
 
-![image](assets/resource/av-encode-h265-7.png)
+![](assets/resource/av-basic-knowledge/av-encode-h265-7.png)
 
 
 #### 2.2.4、RQT 技术
@@ -805,7 +805,7 @@ H.264 基于 4x4 大小的编码块采用 9 种预测模式，基于 16x16 大�
 **2）分析流程**
 
 
-![image](assets/resource/av-encode-h265-12.png)
+![](assets/resource/av-basic-knowledge/av-encode-h265-12.png)
 
 
 
@@ -828,7 +828,7 @@ H.264 基于 4x4 大小的编码块采用 9 种预测模式，基于 16x16 大�
     - R 代表编码当前模式信息和变换量化系数的比特数
     - λ 是拉格朗日倍数，是用 D 和 R 计算率失真代价的权重
 
-![image](assets/resource/av-encode-h265-13.png)
+![](assets/resource/av-basic-knowledge/av-encode-h265-13.png)
 
 - Full RDO：
     - 使用 SSD（平方差之和）衡量 D（失真）
@@ -838,7 +838,7 @@ H.264 基于 4x4 大小的编码块采用 9 种预测模式，基于 16x16 大�
     - 使用 SAD（绝对差之和）或者 SATD（绝对差变换和）衡量 D
     - 粗略用模式信息的比特数表示 R（忽略量化系数的比特），或者估算量化系数的比特
 
-![image](assets/resource/av-encode-h265-14.png)
+![](assets/resource/av-basic-knowledge/av-encode-h265-14.png)
 
 
 
@@ -874,7 +874,7 @@ H.266，也被称为**多功能视频编码（Versatile Video Coding，简称 VV
 
 **H.266 中增加了四叉树分块之外的新分块方法：MTT（Multiple-Type Tree）。**H.266 采用了四叉树加多类型树（QT+MTT）的分块法。在 QT+MTT 分块中，一个方块可以均匀分成左右或上下两个矩形块，也称为 BT 划分（Binary-Tree Split）；或者也可以从左到右或从上到下按 1:2:1 的比例分成三个矩形块，也称为 TT 划分（Ternary-Tree Split），如下图所示。同时，BT 或者 TT 划分得到的子块还允许继续使用 BT 或者 TT 划分，但是不能再使用 QT 划分。
 
-![image](assets/resource/av-encode-h266-1.png)
+![](assets/resource/av-basic-knowledge/av-encode-h266-1.png)
 
 **H.266 中还允许对色度分量采用不同的分块树结构 CST（Chroma Separate Tree）。**CST 有两种实现方式：
 
@@ -1049,19 +1049,19 @@ H.266 条带有两种模式：
 
 包含 18×12 CTUs 的图像被划分为 24 个瓦片和 9 个矩形条带：
 
-![image](assets/resource/av-encode-h266-2.png)
+![](assets/resource/av-basic-knowledge/av-encode-h266-2.png)
 
 
 一个图像被划分为 4 个瓦片和 4 个矩形条带（注：左边两个瓦片合为一个条带，而右上角的瓦片被划分为 2 个矩形条带）：
 
-![image](assets/resource/av-encode-h266-3.png)
+![](assets/resource/av-basic-knowledge/av-encode-h266-3.png)
 
 - **光栅扫描条带**。每个光栅扫描条带也包含一个或多个完整的瓦片，但是这些瓦片的顺序必须是光栅扫描顺序，所以其形状通常不是矩形的（如下图所示）。
 
 
 包含 18×12 CTUs 的图像被划分为 12 个瓦片和 3 个光栅扫描条带：
 
-![image](assets/resource/av-encode-h266-4.png)
+![](assets/resource/av-basic-knowledge/av-encode-h266-4.png)
 
 
 H.266 是第一个引入**子图像**这个设计的视频编码标准。概念上子图像与 H.265 中的运动受限的瓦片集（Motion-Constrained Tile Set, MCTS）相同，但是在设计上做了改进以提高编码压缩效率和应用系统友好性。每个子图像的形状也必须是矩形的，包含一个或多个矩形条带（如下图所示）。
@@ -1069,7 +1069,7 @@ H.266 是第一个引入**子图像**这个设计的视频编码标准。概念�
 
 一个图像被划分为 18 个瓦片、24 个条带和 24 个子图像（这个例子中每个子图像正好包含一个矩形条带）：
 
-![image](assets/resource/av-encode-h266-5.png)
+![](assets/resource/av-basic-knowledge/av-encode-h266-5.png)
 
 
 子图像可以独立编码从而可以被提取出来单独解码，所以可以用于感兴趣区域（Region Of Interest, ROI）编码，也可以用于 360 度视频的传输优化，如下图所示。360 度视频与传统视频应用的最关键区别之一是用户在任何瞬间都只会看到整个 360 度球面的一小部分，这个传输方案就是利用这个关键点进行优化，目标是让用户看到的部分具有高画质，而看不到的部分的画质可以比较低。看不到的部分也不能完全不传，因为那样的话，如果用户突然转头就只能看到黑屏，那样就离侵入式体验想去太远了。
@@ -1077,7 +1077,7 @@ H.266 是第一个引入**子图像**这个设计的视频编码标准。概念�
 
 基于子图像的 360 度视频传输方案：
 
-![image](assets/resource/av-encode-h266-6.png)
+![](assets/resource/av-basic-knowledge/av-encode-h266-6.png)
 
 
 H.266 子图像设计相对于 MCTS 的改进主要有以下五点：
@@ -1179,7 +1179,7 @@ H.266 中的多层可伸缩编码设计虽然相对简单，但是仍然不仅�
 
 基于子图像并允许层间预测的 360 度视频传输方案：
 
-![image](assets/resource/av-encode-h266-7.png)
+![](assets/resource/av-basic-knowledge/av-encode-h266-7.png)
 
 
 
@@ -1207,7 +1207,7 @@ H.266 中的多层可伸缩编码设计虽然相对简单，但是仍然不仅�
 
 下图是一段示例码流：
 
-![image](assets/resource/av-encode-h264-6.png)
+![](assets/resource/av-basic-knowledge/av-encode-h264-6.png)
    
 ```
 分界符：0x00000001

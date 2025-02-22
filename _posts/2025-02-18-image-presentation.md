@@ -58,7 +58,7 @@ _微信扫码关注我们_
 
 当我们探讨数字图像时，那必然也需要对应的设备承担类似人眼的功能来实现『视觉感知』，日常生活中最常见的这类设备就是相机，它们的成像原理也类似人眼的成像原理。
 
-![image](assets/resource/av-image-presentation-40.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-40.png)
 
 
 相机利用光的直线传播性质和光的折射与反射规律，以光子为载体，把某一瞬间的被摄景物的光信息量，以能量方式经镜头传递给感光材料（模拟的胶卷或数字的硅片），最终成为可视的影像。
@@ -82,7 +82,7 @@ _微信扫码关注我们_
 
 
 
-![image](assets/resource/av-image-presentation-41.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-41.png)
 
 
 当我们把人眼对颜色的感受进一步细化，它可以分为如下几个特征：
@@ -92,7 +92,7 @@ _微信扫码关注我们_
 - **饱和度（saturation）。**对应于光的颜色表现接近光谱色（例如红色）的程度。浅色或暗淡的颜色的饱和度较低，它们比较接近白色。
 
 
-![image](assets/resource/av-image-presentation-42.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-42.png)
 
 
 还有另外一个术语**色度（chromaticity）**通常是说明『饱和度』和『色调』这两种特征的综合表现。
@@ -128,14 +128,14 @@ _微信扫码关注我们_
 
 在实际应用中，针对某一类型的应用场景，人们还是希望尽量做到颜色模型的统一和兼容，所以我们经历了一系列颜色建模和标准制定的过程。下图是颜色标准制定的关键节点图：
 
-![image](assets/resource/av-image-presentation-51.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-51.png)
 
 
 其中，CIE 是国际照明协会的简称，他们是最早采用数学方式来定义颜色模型的。CIE 提出的颜色模型是从 1920 年代后期 W. David Wright（Wright 1928）和 John Guild（Guild 1931）做的一系列实验中得出的。他们的实验结果合并到了 CIE RGB 颜色模型的规定中，CIE XYZ 颜色模型再从它发展而来。
 
 在后续的学术研究和工业应用中，很多新出的颜色模型就是以 CIE XYZ 为基础制定的。这其中就包括模拟电视时代 NTSC、PAL 和 SECAM 等制式标准推出的颜色模型。下图是模拟电视时代，NTSC、PAL 和 SECAM 三大制式应用分布图：
 
-![image](assets/resource/av-image-presentation-52.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-52.png)
 
 其中，北美、日本采用『NTSC 制式』（美国国家电视系统委员会），常被人提到的『NTSC 色域』其实是『NTSC 1953 色域』，也就是 NTSC 在 1953 年制定的彩色电视色域标准。我国和欧洲的模拟电视采用『PAL 制式』，其色域标准和 SECAM 制式一样，都是 EBU（欧洲广播联盟）色域。
 
@@ -157,7 +157,7 @@ _微信扫码关注我们_
 
 对应的 **RGB 三基色的颜色匹配函数**如下图所示：
 
-![image](assets/resource/av-image-presentation-43.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-43.png)
 
 图中的曲线是经过大量实验综合而得（对大量受试者的感知结果做平均），可以指定合成任何一种光谱颜色所需要的红、绿、蓝的量。其中需要注意的是，在 500 nm 附近的颜色需要从蓝光和绿光的混合光中再『减去』对应的红光得到（红光曲线在 500 nm 附近是负值）。由于这个『负光』的效果在 RGB 彩色显示器无法实现，所以 RGB 彩色显示器不能显示 500 nm 左右的颜色。
 
@@ -165,7 +165,7 @@ _微信扫码关注我们_
 
 我们采用下图中在 RGB 坐标轴定义的单位立方体来描述 RGB 颜色模型。坐标原点表示黑色，其对角坐标点 (1, 1, 1) 表示白色，在三个坐标轴上的顶点分别表示三个基色，余下的顶点则代表每个基色的补色。
 
-![image](assets/resource/av-image-presentation-45-1.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-45-1.png)
 
 
 RGB 是一种**加色模式**，多种基色的量加在一起生成另一种颜色。立方体边界中的每一个颜色点都可以表示为三基色的加权向量和。
@@ -194,7 +194,7 @@ $$ b = \frac{B}{R + G + B} $$
 我们把 r、g、b 称为**色度坐标**，色度坐标舍弃了给定色彩样本的绝对亮度而只表示其纯色。由于 r + g + b = 1，因此任意颜色只需要 r、g 两个色度坐标进行描述即可，即色度空间是二维的。一般以 r-g 为色度坐标给出 **RGB 颜色模型的色度图**，如下图所示。其中标准白光位置在 (r = 1/3, g = 1/3) 处。
 
 
-![image](assets/resource/av-image-presentation-46.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-46.png)
 
 
 
@@ -205,7 +205,7 @@ $$ b = \frac{B}{R + G + B} $$
 
 **因为 RGB 模型中与『负光』混合所带来的种种问题，CIE 从数学上定义了三种标准基色 XYZ（是理论上的颜色，而非实际的颜色），形成了『CIE XYZ 颜色模型』。同时还定义了一组输出全部为正值的 『XYZ 颜色匹配函数』，指定了描述任何一种光谱颜色所需要的各基色分量，XYZ 颜色匹配函数是基于 RGB 三基色颜色匹配函数的线性组合。CIE XYZ 颜色模型是定义各种颜色的国际标准。并且使用 CIE 基色还能避免颜色的负值匹配问题，以及选择一组实际基色有关的其他问题。**
 
-![image](assets/resource/av-image-presentation-44.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-44.png)
 
 其中 X、Y、Z 分别表示生成一种颜色所需的 CIE 基色量的系数。因此，在 XYZ 颜色模型中描述一种颜色的方式与 RGB 模型中是一样的。在三维 XYZ 颜色空间中，任何一种颜色 C(λ) 可以表示成：
 
@@ -279,7 +279,7 @@ $$ z = \frac{Z}{X + Y + Z} $$
 
 同样的，这里我们把 x、y、z 称为色度坐标，由于 x + y + z = 1，任意颜色可仅用 x 和 y 表示。一般以 x-y 为色度坐标给出 CIE XYZ 颜色模型的色度图，**CIE 1931 年的 x-y 色度图**如下所示：
 
-![image](assets/resource/av-image-presentation-47.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-47.png)
 
 上图中，曲线上的点是电磁光谱中的纯色，按波长的顺序从光谱的红色端到紫色端方向来标明，连接红色和紫色光谱点的直线称为**紫色线**，它不属于光谱。曲线内部的点表示所有可能的可见颜色的组合。其中 C 点对应与 (x = 1/3, y = 1/3) 的位置，表示白色。在实际中，C 点通常作为白光源或日光色度近似值。由于归一化的处理，色度图中没有亮度值。所有具有统一色度但不同亮度的颜色都映射到色度图中的同一点。色度图主要用于：
 
@@ -296,12 +296,12 @@ $$ z = \frac{Z}{X + Y + Z} $$
 
 三点 C<sub>3</sub>、C<sub>4</sub>、C<sub>5</sub> 作为三基色的颜色范围是他们连成的三角形区域（包含边上）。三基色只能生成对应三角形区域的颜色。因此，**色度图可以帮助我们理解为什么没有哪一个三基色组可以通过加色混合生成所有的颜色，因为没有一个三角形能包含所有的颜色。**
 
-![image](assets/resource/av-image-presentation-48.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-48.png)
 
 
 在 CIE 色度图上可以很容易对比不同颜色标准的颜色范围，比如下图是几种不同标准的颜色范围：
 
-![image](assets/resource/av-image-presentation-53.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-53.png)
 
 下表是几种不同标准采用 RGB 三基色时在 CIE 色度图中的三角坐标：
 
@@ -320,7 +320,7 @@ $$ z = \frac{Z}{X + Y + Z} $$
 前面有提到过，互补色是两个混合在一起为白色的颜色。又由于色度图上两种基色的颜色范围是一条线段，所以一对互补色在色度图上对应的两个点一定位于白色 C 点的两边，并且它们的连线经过 C。如下图所示，用一定量的 C<sub>1</sub> 和 C<sub>2</sub> 就可得到白色，C<sub>1</sub> 和 C<sub>2</sub> 与 C 的距离决定了产生白色所需的两种颜色的量。
 
 
-![image](assets/resource/av-image-presentation-49.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-49.png)
 
 
 **3）主波长**
@@ -329,7 +329,7 @@ $$ z = \frac{Z}{X + Y + Z} $$
 
 但这种确定主波长的方法不适用于 C 与紫色线之间的颜色点。以下图中的 C<sub>2</sub> 为例，我们画一条从 C 经过 C<sub>2</sub> 的直线与紫色线相交于 C<sub>p</sub>，C<sub>p</sub> 并不在可见光谱中，这种情况下，点 C<sub>2</sub> 称为**非光谱颜色**，它的主波长根据 C<sub>p</sub> 的补点 C<sub>sp</sub> 得到，C<sub>sp</sub> 是从 C 经过 C<sub>2</sub> 直线的反向延长线与光谱曲线的交点。**非光谱颜色是在紫-品红范围内，具有从白光减去主波长（如 C<sub>sp</sub>）的光谱分布。**
 
-![image](assets/resource/av-image-presentation-50.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-50.png)
 
 
 **4）饱和度**
@@ -518,7 +518,7 @@ $$ V \in [-157, 157] $$
 | ITU-R BT.2020 | (0.708, 0.292) |  (0.170, 0.797) | (0.131, 0.046) | (0.3127, 0.3290) |
 
 
-![image](assets/resource/av-image-presentation-54.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-54.png)
 
 
 实际上，YC<sub>b</sub>C<sub>r</sub> 不是一种绝对颜色模型（绝对颜色模型是指不依赖任何外部因素就可以准确表示颜色的模型），而是在 YUV 颜色模型的基础上经过缩放和偏移的版本，其中 Y 与 YUV 中 Y 的含义一致，表示亮度；C<sub>b</sub>、C<sub>r</sub> 与 U、V 一样都表示色度，只不过在表示方法上不同而已，C<sub>b</sub> 反映的是 RGB 输入信号蓝色部分与 RGB 信号亮度值之间的差值，C<sub>r</sub> 则反映的是红色部分与亮度之间的差值。
@@ -781,22 +781,22 @@ $$ C_b/Cr \in [16, 240] $$
 
 以几个图来直观地表示 4:4:4、4:2:2、4:1:1、4:2:0 的采样方式：
 
-<!-- ![image](assets/resource/av-image-presentation-30.jpg) -->
+<!-- ![](assets/resource/av-basic-knowledge/av-image-presentation-30.jpg) -->
 
 
-![image](assets/resource/av-image-presentation-444.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-444.png)
 
-![image](assets/resource/av-image-presentation-422.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-422.png)
 
-![image](assets/resource/av-image-presentation-411.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-411.png)
 
-![image](assets/resource/av-image-presentation-420-1.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-420-1.png)
 
-![image](assets/resource/av-image-presentation-420-2.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-420-2.png)
 
-![image](assets/resource/av-image-presentation-420-3.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-420-3.png)
 
-![image](assets/resource/av-image-presentation-420-4.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-420-4.png)
 
 
 
@@ -819,7 +819,7 @@ $$ C_b/Cr \in [16, 240] $$
 - **420SP（simi-planar）混合格式**，NV12 和 NV21 属于此类。
 
 
-![image](assets/resource/av-image-presentation-9-1.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-9-1.png)
 
 
 
@@ -844,13 +844,13 @@ $$ V_{out} = V_{in}^γ $$
 
 $$ Y' = Y^{\frac{1}{γ}} $$
 
-![image](assets/resource/av-image-presentation-62.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-62.png)
 
 
 这里伽马校正的非线性转换的过程除了解决显示伽马的问题外，还带来了一个**有益的副效应**：传输期间增加的噪声（模拟信号时代），在噪声比较明显的较暗信号区域（在接收器做了伽马校正后）会被减少。因为我们的视觉系统对相对亮度差别是敏感的，如下图所示，经过伽马校正后的非线性梯度明显对人眼感知来说更均匀：
 
 
-![image](assets/resource/av-image-presentation-60.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-60.png)
 
 
 在彩色电视发明后，R、G、B 信号会被分别做完伽马校正后再合起来编码（这也就是我们前文中表示的 R'、G'、B'）。
@@ -866,7 +866,7 @@ $$ Y' = Y^{\frac{1}{γ}} $$
 
 当你的显示器已校准为 2.2 的标准伽马时，下图展示了在编码伽马确定时，不同显示伽马对系统端到端伽马的影响以及对最终图像展示效果的影响：
 
-![image](assets/resource/av-image-presentation-61.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-61.png)
 
 上面提到过，显示伽马是 CRT 显示器带来的问题，如今我们已经基本告别 CRT 显示器普遍使用 LCD 显示器了，那显示伽马的问题是不是就没有了呢？事实上，LCD 显示器本身确实没有 CRT 显示器的伽马效应，但是为了兼容性，LCD 以及其他非 CRT 显示设备都模拟了这个伽马效应以实现先前兼容。
 
@@ -889,7 +889,7 @@ Although video standards assume a display gamma of about 2.2, a gamma of about 2
 
 如果要完整的探讨图像数字化的流程，细节还是很复杂的，比如下图是现代数码相机中获取数字图像流程的简单版本，即使简化后，图中所涉及的内容也不是短短几篇文章能够叙述清楚的，所以我们并不打算对这里面的环节都一一覆盖，只是想探讨一下最简单的理论环节，建立一个初步的概念即可。
 
-![image](assets/resource/av-image-presentation-59.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-59.png)
 
 
 
@@ -902,7 +902,7 @@ Although video standards assume a display gamma of about 2.2, a gamma of about 2
 
 
 
-![image](assets/resource/av-image-presentation-55.jpg)
+![](assets/resource/av-basic-knowledge/av-image-presentation-55.jpg)
 
 上图是生成一幅数字图像的简化过程，右上角图中的一维函数是左上角图中沿线段 AB 的连续图像幅度值（灰度级）的曲线。随机变化是由图像噪声引起的。为了对该函数采样，我们沿线段 AB 等间隔的对函数进行采样，如左下角图中所示，每个样本的空间位置由图像底部的垂直刻度指出，样本则由函数曲线上的小方块表示。这样的一组离散位置就给出了采样函数。
 
@@ -912,7 +912,7 @@ Although video standards assume a display gamma of about 2.2, a gamma of about 2
 
 得到的数字图像，我们怎么展示它呢？
 
-![image](assets/resource/av-image-presentation-56.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-56.png)
 
 我们延用上面提到的 f(x, y) 函数表示法的，上图展示了 3 种数字图像的基本展示方式：
 
@@ -950,7 +950,7 @@ Although video standards assume a display gamma of about 2.2, a gamma of about 2
 
 下图是图像使用不同空间分辨率时的展示效果：
 
-![image](assets/resource/av-image-presentation-57.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-57.png)
 
 
 **2）像素深度**
@@ -962,7 +962,7 @@ Although video standards assume a display gamma of about 2.2, a gamma of about 2
 
 下图是灰度图像使用不同灰度级数时的展示效果：
 
-![image](assets/resource/av-image-presentation-58.png)
+![](assets/resource/av-basic-knowledge/av-image-presentation-58.png)
 
 
 

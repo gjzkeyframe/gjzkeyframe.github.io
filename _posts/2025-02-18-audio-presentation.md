@@ -54,7 +54,7 @@ _微信扫码关注我们_
 
 要提取声音的特征，首先要感知到它，人类的听觉感知系统是一个复杂的系统，如下图所示。它是怎么感知声音的呢？简单来讲，声音作为一种机械波，通过空气传播到人耳，在人耳中转变为神经动作电位，神经脉冲到达大脑，人从而感知到声音。至于具体细节，我们就不在这里做过多探讨了。
 
-![image](assets/resource/av-audio-presentation-33.png)
+![](assets/resource/av-basic-knowledge/av-audio-presentation-33.png)
 
 **声音的特征是我们在感知声音并不断对其现象进行研究的过程中逐步识别和提取出来的。**比如，我们很容易就能感知到声音有大有小；有尖锐有浑厚；不同的人说话，即使声音大小差不多，我们也能识别他们。我们对这些感知进行总结便提取出了声音的特征。
 
@@ -72,23 +72,23 @@ _微信扫码关注我们_
 
 比如，我们通常听见的声音，是由于物体振动导致空气分子按照一定的频率产生疏密相间的排列而传播。
 
-![image](assets/resource/av-audio-presentation-18.jpg)
+![](assets/resource/av-basic-knowledge/av-audio-presentation-18.jpg)
 
 当我们取一个单点，来测量这个点的气压随时间的变化，用横轴表示时间，纵轴表示气压，我们可以得到类似下面这张**波形图**：
 
-![image](assets/resource/av-audio-presentation-19.jpg)
+![](assets/resource/av-basic-knowledge/av-audio-presentation-19.jpg)
 
 气压距离标准值偏差越大，说明振动越剧烈，所以振幅越大的波形表示声音越大，即响度越大。波形越紧密则说明单位时间内振动的次数越多，频率越高，即音调越高。
 
 对于上图这样单频率的振动，通过波形图来看声音的相关信息是很简单明了的。而实际情况中，我们听到的声音往往是复杂振动的叠加，比如下图这样：
 
-![image](assets/resource/av-audio-presentation-20.jpg)
+![](assets/resource/av-basic-knowledge/av-audio-presentation-20.jpg)
 
 通过这个波形图，我们很难看出声音的有效信息，因为各个频率的波形都叠加在一起了。这时候我们就需要借助**频谱图**来帮忙了。
 
 频谱图是怎么来的呢？我们可以看看下图：
 
-![image](assets/resource/av-audio-presentation-15.jpg) 
+![](assets/resource/av-basic-knowledge/av-audio-presentation-15.jpg) 
 
 波形可以由多个频率、不同振幅和相位的简单正弦波复合叠加得到。**波形图的横坐标是时间，纵坐标是振幅，表示的是所有频率叠加的正弦波振幅的总大小随时间的变化规律。**
 
@@ -101,7 +101,7 @@ _微信扫码关注我们_
 
 下图是一个声音的波形图（上部分）和频谱图（下部分）的示例：
 
-![image](assets/resource/av-audio-presentation-16.png)
+![](assets/resource/av-basic-knowledge/av-audio-presentation-16.png)
 
 其中，波形图比较简单，横轴是时间，纵轴是响度，并区分了左右声道。
 
@@ -141,9 +141,9 @@ _微信扫码关注我们_
 
 
 
-<!-- ![image](assets/resource/av-audio-presentation-22.svg) -->
+<!-- ![](assets/resource/av-basic-knowledge/av-audio-presentation-22.svg) -->
 
-<!-- ![image](assets/resource/av-audio-presentation-23.svg) -->
+<!-- ![](assets/resource/av-basic-knowledge/av-audio-presentation-23.svg) -->
 
 
 
@@ -164,9 +164,9 @@ _微信扫码关注我们_
 
 
 
-<!-- ![image](assets/resource/av-audio-presentation-24.svg) -->
+<!-- ![](assets/resource/av-basic-knowledge/av-audio-presentation-24.svg) -->
 
-<!-- ![image](assets/resource/av-audio-presentation-25.svg) -->
+<!-- ![](assets/resource/av-basic-knowledge/av-audio-presentation-25.svg) -->
 
 $$ L_I = 10lg\frac{I}{I_0} $$
 
@@ -177,9 +177,9 @@ $$ L_I = 10lg\frac{I}{I_0} $$
 
 **声压级（Sound Pressure Level，SPL）**，是以 2×10<sup>-5</sup> N/m² 为参考值，任一声压与其比值的对数乘以 20 记为声压级，单位也是『分贝(dB)』。这里为什么是 20？把上面讲到的声压与声强的关系公式带入进声强级的计算公式即可推到得出声压级的计算公式。
 
-<!-- ![image](assets/resource/av-audio-presentation-26.svg) -->
+<!-- ![](assets/resource/av-basic-knowledge/av-audio-presentation-26.svg) -->
 
-<!-- ![image](assets/resource/av-audio-presentation-27.svg) -->
+<!-- ![](assets/resource/av-basic-knowledge/av-audio-presentation-27.svg) -->
 
 $$ L_P = 20lg\frac{P}{P_0} $$
 
@@ -197,14 +197,14 @@ $$ L_P = 20lg\frac{P}{P_0} $$
 
 下图中，横坐标为频率，纵坐标为声压级，波动的一条条曲线就是等响度曲线（equal-loudness contours），这些曲线代表着声音的频率和声压级在相同响度级中的关联。
 
-![image](assets/resource/av-audio-presentation-28.jpg)
+![](assets/resource/av-basic-knowledge/av-audio-presentation-28.jpg)
 
 **响度级既考虑了声音的物理效应，又考虑了人耳的听觉生理效应，表示人耳对声音的主观评价。**
 
 
 **我们日常所说的分贝指的是声压级。**比如：
 
-![image](assets/resource/av-audio-presentation-32.png)
+![](assets/resource/av-basic-knowledge/av-audio-presentation-32.png)
 
 比如上表所说的，飞机起飞时的声音是 120 分贝，如果我们知道对应的声音的频率，我们就能知道它的响度级。
 
@@ -228,7 +228,7 @@ $$ L_P = 20lg\frac{P}{P_0} $$
 
 音调和频率的对应关系如图：
 
-![image](assets/resource/av-audio-presentation-31.jpg)
+![](assets/resource/av-basic-knowledge/av-audio-presentation-31.jpg)
 
 在 500 Hz 以下，音调和频率基本上近乎成线性关系，但是对于中高频则成对数关系。
 
@@ -243,14 +243,14 @@ $$ L_P = 20lg\frac{P}{P_0} $$
 
 
 
-![image](assets/resource/av-audio-presentation-30.png)
+![](assets/resource/av-basic-knowledge/av-audio-presentation-30.png)
 
 注意，7 个全音只有 5 个半音。E 和 F 之间，B 和 C 之间是没有半音的。详细来讲，就是一个八度之间有 12 个半音。其中 7 个（CDEFGAB）叫**自然音**，另外 5 个叫**变化音**。自然音之间一般是隔着两个半音（相隔两个半音可以叫距离为一个全音），也有部分自然音之间（E 和 F，B 和 C）只隔一个半音。
 
 
 下面的图表完整的表示自 C4（中央 C）起向上八度内的半音音阶：
 
-![image](assets/resource/av-audio-presentation-29.png)
+![](assets/resource/av-basic-knowledge/av-audio-presentation-29.png)
 
 常见的国际谱、男唱谱、女唱谱的记号和频率对照表：
 
@@ -369,7 +369,7 @@ $$ L_P = 20lg\frac{P}{P_0} $$
 
 现实中声音的波形绝大多数都不是简单的正弦波，而是一种复杂的波。这种复杂的波形可以分解为一系列的正弦波，这些正弦波中有**基频** f0，它对应声音的**基音**，还有与 f0 成整数倍关系的**谐波**：f1、f2、f3、f4 等，它们对应声音的**泛音**，它们的振幅有特定的比例。这种特定的比例，赋予每种声音特色，这就是**音色**。如果没有谐波成分，单纯的基频正弦信号是毫无音乐感的。因此，乐器乐音的频率范围包括基频和谐波。
 
-![image](assets/resource/av-audio-presentation-21.jpg)
+![](assets/resource/av-basic-knowledge/av-audio-presentation-21.jpg)
 
 上一节讲到的声音音调的高低是由基音对应的基频决定的。这就是为什么同唱一个音调，不同人的音色截然不同的根本原因：他们只是基频相同，谐波是截然不同的。
 
@@ -415,7 +415,7 @@ $$ L_P = 20lg\frac{P}{P_0} $$
 
 其过程如下图所示：
 
-![image](assets/resource/av-encode-audio-1.png)
+![](assets/resource/av-basic-knowledge/av-encode-audio-1.png)
 
 经过数字化处理后的数字音频包含如下三要素：
 
@@ -463,7 +463,7 @@ $$ 动态范围 = 20 × lg(2^{位深}) $$
 人耳有大约 140 分贝的动态听力范围，类似一根针掉到地上和喷气发动机噪音的区别。当声压级达 120 分贝时，人耳将感到痛楚，无法忍受，因此，人能接受的动态范围为 0～120 分贝。在音乐厅中听乐队演奏大型交响音乐，最响的音乐片段可达 115 分贝，最弱的音乐片段约为 25 分贝，因而动态范围可达 90 分贝。当然，这是很少有的情况。通常交响音乐的动态范围约为 50～80 分贝，中、小型音乐的动态范围约在 40 分贝左右，语言的动态范围约在 30 分贝左右。
 
 <!-- 
-![image](assets/resource/av-audio-presentation-17.jpg) 
+![](assets/resource/av-basic-knowledge/av-audio-presentation-17.jpg) 
 -->
 
 CD 音乐音频使用 16 bit 的位深，DVD 音频使用 24 bit 的位深，而大多数电话设备使用 8 bit 的位深。
@@ -535,11 +535,11 @@ Android支持模式：
 - 交错格式：不同声道的数据交错排列。
 - 平坦格式：相同声道的数据聚集排列。
 
-![image](assets/resource/av-encode-audio-5.png)
+![](assets/resource/av-basic-knowledge/av-encode-audio-5.png)
 
 下面是一个示例：
 
-![image](assets/resource/av-encode-audio-4.png)
+![](assets/resource/av-basic-knowledge/av-encode-audio-4.png)
 
 
 此外，在处理 PCM 数据时，还需要注意大小端字节序类型。

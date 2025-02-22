@@ -31,7 +31,7 @@ HLS 协议的实现是和 M3U8 文件的定义密切相关的，这部分的知�
 
 HLS 协议的整体框架如下图所示：
 
-![image](assets/resource/av-protocol-hls-1.png)
+![](assets/resource/av-basic-knowledge/av-protocol-hls-1.png)
 
 HLS 协议涉及到 3 个部分：
 
@@ -66,7 +66,7 @@ HLS 协议涉及到 3 个部分：
 
 有了这个插件，我们就可以配合 Chrome 的 Inspect/Network 能力来抓取 HLS 加载 M3U8 和 ts 切片的请求的细节信息。
 
-![image](assets/resource/av-protocol-hls-2.png)
+![](assets/resource/av-basic-knowledge/av-protocol-hls-2.png)
 
 
 ## 3、问题集锦

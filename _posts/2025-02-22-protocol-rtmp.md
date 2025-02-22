@@ -32,7 +32,7 @@ RTMP 在两个对等的通信端之间通过可靠的传输协议（例如 TCP�
 
 使用 RTMP 协议来传输音视频数据的流程大致如下：
 
-![image](assets/resource/av-protocol-rtmp-1.webp)
+![](assets/resource/av-basic-knowledge/av-protocol-rtmp-1.webp)
 
 在发送端：
 
@@ -95,25 +95,25 @@ Chunk Size 是可以根据实际情况进行改变的，即通过发送控制命
 
 最完整的 `RTMP Chunk Header` 长度是 12 字节。
 
-![image](assets/resource/av-protocol-rtmp-2.webp)
+![](assets/resource/av-basic-knowledge/av-protocol-rtmp-2.webp)
 
 一般情况下，`msg stream id` 是不会变的，所以针对视频或音频，除了第一个 Chunk 的 RTMP Chunk Header 是 12 字节的，后续的 Chunk 可省略这个 4 字节的字段，采用 8 字节的 RTMP Chunk Header。
 
-![image](assets/resource/av-protocol-rtmp-3.webp)
+![](assets/resource/av-basic-knowledge/av-protocol-rtmp-3.webp)
 
 如果和前一条 Chunk 相比，当前 Chunk 的消息长度 `message length` 和消息类型 `msg type id`（视频为 9；音频为 8）字段又相同，即可将这两部分也省去，RTMP Chunk Header 采用 4 字节类型。
 
-![image](assets/resource/av-protocol-rtmp-4.webp)
+![](assets/resource/av-basic-knowledge/av-protocol-rtmp-4.webp)
 
 如果和前一条 Chunk 相比，当前 Chunk 的 `msg stream id`、`msg type id`、`message length` 字段都相同，而且都属于同一个消息（由同一个 Message 切割而来），那么这些 Chunk 的时间戳 `timestamp` 字段也会是相同的，故后面的 Chunk 也可以省去 `timestamp` 字段，RTMP Chunk Header 采用 1 字节类型。
 
-![image](assets/resource/av-protocol-rtmp-5.webp)
+![](assets/resource/av-basic-knowledge/av-protocol-rtmp-5.webp)
 
 
 当 Chunk Size 很大时，此时所有的 Message 都只能相应切割成一个 Chunk，后续的 Chunk 与前一条 Chunk 仅 `msg stream id` 相同。此时基本上除了第一个 Chunk 的 Header 是 12 字节外，其它所有 Chunk 的 Header都是 8 字节。
 
 
-![image](assets/resource/av-protocol-rtmp-6.webp)
+![](assets/resource/av-basic-knowledge/av-protocol-rtmp-6.webp)
 
 
 

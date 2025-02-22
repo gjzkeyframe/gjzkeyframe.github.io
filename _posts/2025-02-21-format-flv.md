@@ -40,14 +40,14 @@ Tag 中包含着 audio、video、scripts 的元信息，加密信息（可选）
 
 总体来讲，FLV 的结构大致如下表所示：
 
-![image](assets/resource/av-format-flv-1.png)
+![](assets/resource/av-basic-knowledge/av-format-flv-1.png)
 
 
 ## 2、Audio Tags 解析
 
 Audio Tag 的结构大致如下所示：
 
-![image](assets/resource/av-format-flv-2.png)
+![](assets/resource/av-basic-knowledge/av-format-flv-2.png)
 
 通常在 AudioTagHeader 后面跟着就是 AUDIODATA 数据了，但是对于 AAC 格式的音频数据来说，AudioTagHeader 会多一个字段 AACPacketType 来表示 AACAUDIODATA 的类型：如果 AACPacketType 为 0，那么数据对应的是 AudioSpecificConfig；如果 AACPacketType 为 1，那么数据对应的为 Raw AAC frame data。
 
@@ -136,13 +136,13 @@ GetAudioObjectType() {
 我们常用的 AAC 音频同步包的大小固定为 4 字节，前两个字节被称为 `AACDecoderSpecificInfo`，用于描述这个音频包应当如何被解析，后两个字节称为 `AudioSpecificConfig`，更加详细的指定了音频格式。下图是一个 AAC 音频同步包的示例：
 
 
-![image](assets/resource/av-format-flv-6.png)
+![](assets/resource/av-basic-knowledge/av-format-flv-6.png)
 
 
 在完成 AAC 音频同步包的发送后，我们就可以向服务器推送普通的 AAC 数据包了。在发送数据包时，`AACDecoderSpecificInfo` 则变为 `0xAF01`，向服务器说明这个包是普通 AAC 数据包。**如果这里的 AAC 数据有包含 7 个字节 ADTS 头（若存在 CRC 校验，则是 9 个字节），那么要去掉这个头后，把裸数据放到这里。如果这里是采集到的裸数据，没有 ADTS 头，那么这里就不需要这样处理了。**下图是一个 AAC 音频数据包的示例：
 
 
-![image](assets/resource/av-format-flv-7.png)
+![](assets/resource/av-basic-knowledge/av-format-flv-7.png)
 
 
 
@@ -240,7 +240,7 @@ int ff_mpeg4audio_get_config_gb(MPEG4AudioConfig *c, GetBitContext *gb, int sync
 
 Video Tag 的结构大致如下所示：
 
-![image](assets/resource/av-format-flv-3.png)
+![](assets/resource/av-basic-knowledge/av-format-flv-3.png)
 
 如上图所示，一般在 VideoTagHeader 后面跟着的就是 VIDEODATA 数据了，但是对于 AVC(H.264) 的编码格式来说，VideoTagHeader 会多出两个字段 AVCPacketType 和 CompositionTime。AVCPacketType 是表示后面 VIDEODATA 的类型，CompositionTime 则表示 pts 和 dts 的差值。
 
@@ -388,17 +388,17 @@ aligned(8) class HEVCDecoderConfigurationRecord {
 
 下图是一个 AVC 视频同步包的示例，其中红框部分对应的是 VIDEODATA：
 
-![image](assets/resource/av-format-flv-9.png)
+![](assets/resource/av-basic-knowledge/av-format-flv-9.png)
 
-![image](assets/resource/av-format-flv-8.png)
+![](assets/resource/av-basic-knowledge/av-format-flv-8.png)
 
 
 
 下图是一个 AVC 视频数据包的示例，其中红框部分对应的是 VIDEODATA：
 
-![image](assets/resource/av-format-flv-11.png)
+![](assets/resource/av-basic-knowledge/av-format-flv-11.png)
 
-![image](assets/resource/av-format-flv-10.png)
+![](assets/resource/av-basic-knowledge/av-format-flv-10.png)
 
 
 
@@ -477,7 +477,7 @@ int ff_isom_write_avcc(AVIOContext *pb, const uint8_t *data, int len)
 
 Data Tag 的结构大致如下所示：
 
-![image](assets/resource/av-format-flv-4.png)
+![](assets/resource/av-basic-knowledge/av-format-flv-4.png)
 
 
 其中 ScriptTagBody 中的 Name 和 Value 字段都是 SCRIPTDATAVALUE 类型。Name 最终对应的是 String 类型，Value 最终对应的是 ECMA array 类型。
@@ -511,7 +511,7 @@ Data Tag 里可以承载不同的数据，其中我们最关心是的音视频�
 
 onMetadata 包含着不同的属性，这些属性对于不同的 FLV 文件可能各不相同。
 
-![image](assets/resource/av-format-flv-5.png)
+![](assets/resource/av-basic-knowledge/av-format-flv-5.png)
 
 
 

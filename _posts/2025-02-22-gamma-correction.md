@@ -31,7 +31,8 @@ $$ V_{out} = V_{in}^γ $$
 
 $$ Y' = Y^{\frac{1}{γ}} $$
 
-![CRT 伽马和伽马校正](assets/resource/av-image-presentation-62.png)
+![CRT 伽马和伽马校正](assets/resource/av-basic-knowledge/av-image-presentation-62.png)
+_CRT 伽马和伽马校正_
 
 
 所以，一个完整的图像获取和显示系统，需要至少两个伽马值：1）编码伽马，体现了设备获取到的场景亮度值和编码像素值之间的关系；2）显示伽马，体现了编码像素值和显示器亮度之间的关系。
@@ -47,7 +48,8 @@ $$ Y' = Y^{\frac{1}{γ}} $$
 
 我们看一个例子，当你的显示器已校准为 2.2 的标准伽马时，下图展示了在编码伽马确定时，不同显示伽马对系统端到端伽马的影响以及对最终图像展示效果的影响：
 
-![不同显示伽马下的图像](assets/resource/av-image-presentation-61.png)
+![不同显示伽马下的图像](assets/resource/av-basic-knowledge/av-image-presentation-61.png)
+_不同显示伽马下的图像_
 
 
 
@@ -58,7 +60,8 @@ $$ Y' = Y^{\frac{1}{γ}} $$
 上面的伽马校正的所做非线性转换过程除了解决显示伽马的问题外，还带来了一个`额外收益`：**传输期间增加的噪声（模拟信号时代），在噪声比较明显的较暗信号区域（在接收器做了伽马校正后）会被减少。因为我们的视觉系统对相对亮度差别是敏感的，经过伽马校正后的非线性梯度明显对人眼感知来说更均匀。**如下图所示，
 
 
-![线性和非线性的亮度效果](assets/resource/av-image-presentation-60.png)
+![线性和非线性的亮度效果](assets/resource/av-basic-knowledge/av-image-presentation-60.png)
+_线性和非线性的亮度效果_
 
 
 
@@ -75,15 +78,18 @@ $$ Y' = Y^{\frac{1}{γ}} $$
 - `PQ（Perceptual Quantizer，感知量化）曲线`的设计更接近人眼的特点，亮度表达更准确。基于人眼的对比敏感度函数（Contrast Sensitivity Function，CSF），在 SMPTE ST 2084 标准中规定了 EOTF 曲线。亮度范围可从最暗 0.00005nit 到最亮 10000nit。PQ 曲线最早是由 Dolby 公司开发的，并且在 ST 2084 中进行了标准化。
 - `HLG（Hybrid Log Gamma，混合对数伽马）曲线`是另外一个重要的 HDR 转换函数曲线，由 BBC 和 NHK 公司开发。这个曲线与 PQ 曲线不同，HLG 规定的是 OETF 曲线，因为在低亮度区域基本与 Gamma 曲线重合，所以提供了与 SDR 显示设备很好的兼容性，在广播电视系统里有着广泛的应用。HLG 曲线最早在 ARIB STD-B67 中进行了标准化，后面也进入了 ITU-R BT.2100。
 
-![OETF 和 EOTF](assets/resource/transcode-hdr-to-sdr-5.png)
+![OETF 和 EOTF](assets/resource/av-basic-knowledge/transcode-hdr-to-sdr-5.png)
+_OETF 和 EOTF_
 
 
-![SDR 和 HDR 的非线性编码](assets/resource/transcode-hdr-to-sdr-8.jpg)
+![SDR 和 HDR 的非线性编码](assets/resource/av-basic-knowledge/transcode-hdr-to-sdr-8.jpg)
+_SDR 和 HDR 的非线性编码_
 
 
 这样一来，常见的图像处理系统中光信号和电信号的转换通常有如下流程：
 
-![图像处理系统中的光电转换](assets/resource/gamma-1.png)
+![图像处理系统中的光电转换](assets/resource/av-basic-knowledge/gamma-1.png)
+_图像处理系统中的光电转换_
 
 
 参考：

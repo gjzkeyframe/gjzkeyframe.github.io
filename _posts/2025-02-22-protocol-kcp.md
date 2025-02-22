@@ -71,11 +71,11 @@ KCP 正常模式同 TCP 一样使用公平退让法则，即发送窗口大小�
 
 KCP 的 input/output 方法用来对接下层的 UDP 收发模块。而 `ikcp_send`、`ikcp_recv` 提供给上层逻辑调用实现协议的收发。
 
-![image](assets/resource/av-protocol-kcp-1.png)
+![](assets/resource/av-basic-knowledge/av-protocol-kcp-1.png)
 
 KCP 的数据格式如下图所示：
 
-![image](assets/resource/av-protocol-kcp-4.png)
+![](assets/resource/av-basic-knowledge/av-protocol-kcp-4.png)
 
 KCP 的发送和接收单元是 segment，即应用层的数据可能会拆分成多个 segment 发送。
 
@@ -343,7 +343,7 @@ KCP 也一样，如果 `ikcp_waitsnd` 超过阈值，比如 2 倍 `snd_wnd`，�
 
 一个纯算法的 KCP 对象，组成了一个干净独立的协议单元：
 
-![image](assets/resource/av-protocol-kcp-1.png)
+![](assets/resource/av-basic-knowledge/av-protocol-kcp-1.png)
 
 KCP 的 input/output 方法用来对接下层的 UDP 收发模块。而 `ikcp_send`、`ikcp_recv` 提供给上层逻辑调用实现协议的收发。
 
@@ -351,7 +351,7 @@ KCP 的 input/output 方法用来对接下层的 UDP 收发模块。而 `ikcp_se
 
 不同的协议单元模块可以串联起来，比如：
 
-![image](assets/resource/av-protocol-kcp-2.png)
+![](assets/resource/av-basic-knowledge/av-protocol-kcp-2.png)
 
 假设你设计了一套 FEC 协议，那么可以把 KCP 的 input/output 和 FEC 协议的 send/recv 串联起来，使 KCP 的 output 被调用时，把 KCP 希望发送的数据调用 FEC 的 send 方法传递给 FEC 模块，而从 FEC 模块 recv 到的数据再反向 input 给 KCP。
 
@@ -364,7 +364,7 @@ KCP 的 input/output 方法用来对接下层的 UDP 收发模块。而 `ikcp_se
 
 为了方便数据在协议栈中高性能的传递，你可以选择实现类似 Linux skbuf 的数据结构来管理各个数据包：
 
-![image](assets/resource/av-protocol-kcp-3.png)
+![](assets/resource/av-basic-knowledge/av-protocol-kcp-3.png)
 
 这样的数据结构方便在包的头部不断添加或者剥离数据，当数据包由最高层协议产生不断往下传递的过程是一个不断追加包头的过程，而数据接收回来，从最底层进入一直往上的过程是一个不断剥离包头的过程，使用 skbuf 数据结构利于避免追加/剥离包头时的频繁内存拷贝。
 

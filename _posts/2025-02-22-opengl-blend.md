@@ -21,7 +21,8 @@ _微信扫码关注我们_
 
 OpenGL 一次渲染过程包含了多个阶段，包括顶点着色器、图元组装、栅格化、片元着色器、测试和混合等，最后将结果输出到 `FrameBuffer` 上。渲染管线最后一个阶段就是混合。
 
-![OpenGL 渲染管线](assets/resource/blend.jpeg)
+![OpenGL 渲染管线](assets/resource/av-basic-knowledge/blend.jpeg)
+_OpenGL 渲染管线_
 
 要正确的渲染出预期的颜色效果，需要对混合的几个概念有一些了解，否则很可能会发现最后出来的颜色跟自己想要的是不一样的。这篇文章我们就讲一讲相关的概念和实践。
 
@@ -71,7 +72,8 @@ glDisable(GL_BLEND); // 关闭颜色混合
 
 在开启了颜色混合后，还需要通过 `glBlendFunc` 函数指定混合模式。`glBlendFunc` 函数的参数可以理解为混合因子，第一个参数代表源颜色混合因子，第二个参数代表目标颜色混合因子。混合因子可选值如下：
 
-![混合因子可选值](assets/resource/blend-mode.png)
+![混合因子可选值](assets/resource/av-basic-knowledge/blend-mode.png)
+_混合因子可选值_
 
 根据上面的混合因子的可选值，可以组合出来的混合模式有很多种。不过，在我们开发中常用的混合模式有 2 种，我们举例分析：
 
