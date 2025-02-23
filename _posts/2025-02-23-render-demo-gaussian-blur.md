@@ -508,6 +508,6 @@ public void onFrameAvailable(KFFrame frame) {
 - [高斯模糊的分离性](https://www.zhihu.com/question/364517094/answer/2258633530 "高斯模糊的分离性")
 - [高斯模糊的原理](https://zhuanlan.zhihu.com/p/493628728 "高斯模糊的原理")
 - [Efficient Gaussian blur with linear sampling](https://www.rastergrid.com/blog/2010/09/efficient-gaussian-blur-with-linear-sampling/ "Efficient Gaussian blur with linear sampling")
-- [高斯模糊算法](http://www.ruanyifeng.com/blog/2012/11/gaussian_blur.html "高斯模糊算法")
+- [高斯模糊算法 ](https://www.ruanyifeng.com/blog/2012/11/gaussian_blur.html "高斯模糊算法")
 - [高斯模糊 OpenGL 代码实现](https://cloud.tencent.com/developer/article/1806913 "高斯模糊OpenGL代码实现")
 

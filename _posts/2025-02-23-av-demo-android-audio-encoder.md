@@ -487,7 +487,7 @@ public class KFAudioByteBufferEncoder extends KFByteBufferCodec {
 
 ## 3、采集音频数据进行 AAC 编码和存储
 
-我们在一个 `MainActivity` 中来实现音频采集及编码逻辑，并将编码后的数据加上 [ADTS](http://wiki.multimedia.cx/index.php?title=ADTS "ADTS 格式") 头信息存储为 AAC 数据。
+我们在一个 `MainActivity` 中来实现音频采集及编码逻辑，并将编码后的数据加上 [ADTS ](https://wiki.multimedia.cx/index.php?title=ADTS "ADTS 格式") 头信息存储为 AAC 数据。
 
 关于 ADTS，在[《音频编码：PCM 和 AAC 编码》](https://mp.weixin.qq.com/s/tVUgH17HZe6PWj09hYzkbg)中也有介绍，可以去看看了解一下。
 
