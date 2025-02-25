@@ -3,17 +3,22 @@ title: 数据抓包工具
 description: 介绍常用的数据抓包工具。
 author: Keyframe
 date: 2025-02-22 11:08:08 +0800
-categories: [音视频工具]
-tags: [音视频工具, 音视频, Charles, Wireshark]
+categories: [音视频实用工具]
+tags: [音视频实用工具, 音视频, Charles, Wireshark]
 pin: false
 math: true
 mermaid: true
 ---
 
-> 本文转自微信公众号 `关键帧Keyframe`，推荐您关注来获取**音视频**、**AI** 领域的最新技术和产品信息：
+> 本文转自微信公众号 `关键帧Keyframe`，推荐您关注来获取**音视频、AI 领域的最新技术和产品信息**：
 >
 >![微信公众号](assets/img/keyframe-mp.jpg)
-_微信扫码关注我们_
+>_微信扫码关注我们_
+>
+>您还可以加入知识星球 `关键帧的音视频开发圈` 来一起交流工作中的**技术难题、职场经验**：
+>
+>![知识星球](assets/img/keyframe-zsxq.png)
+>_微信扫码加入星球_
 {: .prompt-tip }
 
 数据抓包是我们做业务测试、竞品分析的常用方法，在直播、短视频等常见的音视频业务场景能有好的数据抓包工具帮助，很多时候也能事半功倍。这里我们就介绍两款常见的数据抓包工具：

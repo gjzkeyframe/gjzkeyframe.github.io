@@ -3,17 +3,22 @@ title: 可视化音视频分析工具
 description: 介绍常用的音画原始数据分析工具、编码数据分析工具、封装格式分析工具。
 author: Keyframe
 date: 2025-02-22 10:08:08 +0800
-categories: [音视频工具]
-tags: [音视频工具, 音视频, Adobe Audition, YUVToolkit, YUVView, StreamEye, MP4Box.js, MediaParser, MediaInfo, FLVParser, VLC]
+categories: [音视频实用工具]
+tags: [音视频实用工具, 音视频, Adobe Audition, YUVToolkit, YUVView, StreamEye, MP4Box.js, MediaParser, MediaInfo, FLVParser, VLC]
 pin: false
 math: true
 mermaid: true
 ---
 
-> 本文转自微信公众号 `关键帧Keyframe`，推荐您关注来获取**音视频**、**AI** 领域的最新技术和产品信息：
+> 本文转自微信公众号 `关键帧Keyframe`，推荐您关注来获取**音视频、AI 领域的最新技术和产品信息**：
 >
 >![微信公众号](assets/img/keyframe-mp.jpg)
-_微信扫码关注我们_
+>_微信扫码关注我们_
+>
+>您还可以加入知识星球 `关键帧的音视频开发圈` 来一起交流工作中的**技术难题、职场经验**：
+>
+>![知识星球](assets/img/keyframe-zsxq.png)
+>_微信扫码加入星球_
 {: .prompt-tip }
 
 （本文基本逻辑：音画原始数据分析工具介绍 → 编码数据分析工具介绍 → 封装格式分析工具介绍）
