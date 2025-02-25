@@ -265,7 +265,7 @@ _TCP 三次握手和四次挥手_
 
 TFO(TCP Fast Open) 是用来加速连续 TCP 连接的数据交互的 TCP 协议扩展，是对 TCP 握手过程的一种简化。它的原理是：在 TCP 三次握手的过程中，当用户首次访问 Server 时，发送 SYN 包，Server 根据用户 IP 生成 Cookie（已加密），并与 SYN-ACK 一同发回 Client；当 Client 随后重连时，在 SYN 包携带 TCP Cookie；如果 Server 校验合法，则在用户回复 ACK 前就可以直接发送数据；否则按照正常三次握手进行。
 
-TFO 由 Google 于 2011 年的论文 [TCP Fast Open](http://conferences.sigcomm.org/co-next/2011/papers/1569470463.pdf) 中提出，IPV4 的 TFO 已经合入 Linux Kernel Mainline，Client 内核版本为 3.6，Server 内核版本为 3.7。
+TFO 由 Google 于 2011 年的论文 [TCP Fast Open](https://conferences.sigcomm.org/co-next/2011/papers/1569470463.pdf) 中提出，IPV4 的 TFO 已经合入 Linux Kernel Mainline，Client 内核版本为 3.6，Server 内核版本为 3.7。
 
 Google 研究发现 TCP 三次握手是页面延迟时间的重要组成部分，所以他们提出了 TFO：**在 TCP 握手期间交换数据**，这样可以减少一次 RTT。根据测试数据，TFO 可以减少 15% 的 HTTP 传输延迟，全页面的下载时间平均节省 10%，最高可达 40%。
 
@@ -453,10 +453,10 @@ av_dict_set_int(&ffp->format_opts, "fpsprobesize", 0, 0);
 这样，`avformat_find_stream_info ` 的耗时就可以缩减到 100ms 以内。
 
 
-甚至，我们可以进一步直接去掉 `avformat_find_stream_info` 这个过程，自定义完成解码环境初始化。参见：[VLC 优化（1）avformat_find_stream_info 接口延迟降低](https://jiya.io/archives/vlc_optimize_1.html "VLC 优化（1）avformat_find_stream_info 接口延迟降低") 和 [FFmpeg avformat_find_stream_info 替换](http://blog.csdn.net/leo2007608/article/details/53421528 "FFmpeg avformat_find_stream_info 替换")。
+甚至，我们可以进一步直接去掉 `avformat_find_stream_info` 这个过程，自定义完成解码环境初始化。参见：[VLC 优化（1）avformat_find_stream_info 接口延迟降低](https://jiya.io/archives/vlc_optimize_1.html "VLC 优化（1）avformat_find_stream_info 接口延迟降低") 和 [FFmpeg avformat_find_stream_info 替换](https://blog.csdn.net/leo2007608/article/details/53421528 "FFmpeg avformat_find_stream_info 替换")。
 
 
-对 `avformat_find_stream_info` 代码的分析，还可以看看这里：[FFmpeg 源代码简单分析：avformat_find_stream_info()](http://blog.csdn.net/leixiaohua1020/article/details/44084321 "FFmpeg 源代码简单分析：avformat_find_stream_info()")。
+对 `avformat_find_stream_info` 代码的分析，还可以看看这里：[FFmpeg 源代码简单分析：avformat_find_stream_info()](https://blog.csdn.net/leixiaohua1020/article/details/44084321 "FFmpeg 源代码简单分析：avformat_find_stream_info()")。
 
 
 ### 5.2、短视频前置 moov box
