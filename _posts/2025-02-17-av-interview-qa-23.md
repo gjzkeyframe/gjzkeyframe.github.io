@@ -4,7 +4,7 @@ description: 持续更新的音视频面试题集锦。
 author: Keyframe
 date: 2025-02-17 04:18:08 +0800
 categories: [音视频面试题集锦]
-tags: [音视频面试题集锦, 音视频]
+tags: [音视频面试题集锦,  面试, 音视频]
 pin: false
 math: true
 mermaid: true

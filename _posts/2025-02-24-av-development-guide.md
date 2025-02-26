@@ -60,7 +60,7 @@ mermaid: false
 
 ---
 
-![《声音的表示》概要](assets/resource/av-guide/声音的表示.png)
+![《声音的表示》概要](assets/resource/career-guide/声音的表示.png)
 _《声音的表示》概要_
 
 - 1）[《声音的表示（1）：声音的定义和特征》](https://mp.weixin.qq.com/s/b4XkNaZWnSLx8KxqV0Ul1A)
@@ -78,7 +78,7 @@ _《声音的表示》概要_
 
 ---
 
-![《图像的表示》概要](assets/resource/av-guide/图像的表示.png)
+![《图像的表示》概要](assets/resource/career-guide/图像的表示.png)
 _《图像的表示》概要_
 
 
@@ -109,7 +109,7 @@ _《图像的表示》概要_
 
 ---
 
-![《音频编码》概要](assets/resource/av-guide/音频编码.png)
+![《音频编码》概要](assets/resource/career-guide/音频编码.png)
 _《音频编码》概要_
 
 
@@ -121,7 +121,7 @@ _《音频编码》概要_
 
 ---
 
-![《视频编码》概要](assets/resource/av-guide/视频编码.png)
+![《视频编码》概要](assets/resource/career-guide/视频编码.png)
 _《视频编码》概要_
 
 
@@ -148,7 +148,7 @@ _《视频编码》概要_
 
 ---
 
-![《MP4 格式》概要](assets/resource/av-guide/MP4格式.png)
+![《MP4 格式》概要](assets/resource/career-guide/MP4格式.png)
 _《MP4 格式》概要_
 
 - 11）[《MP4 格式：短视频常用格式》](https://mp.weixin.qq.com/s/GAYkhrakhQlkpnWwKrFeyg)
@@ -157,7 +157,7 @@ _《MP4 格式》概要_
 
 ---
 
-![《FLV 格式》概要](assets/resource/av-guide/FLV格式.png)
+![《FLV 格式》概要](assets/resource/career-guide/FLV格式.png)
 _《FLV 格式》概要_
 
 - 12）[《FLV 格式：直播常用格式》](https://mp.weixin.qq.com/s/M0g6DheyUX9a9s_qpVU1Gw)
@@ -167,7 +167,7 @@ _《FLV 格式》概要_
 ---
 
 
-![《M3U8 格式》概要](assets/resource/av-guide/M3U8格式.png)
+![《M3U8 格式》概要](assets/resource/career-guide/M3U8格式.png)
 _《M3U8 格式》概要_
 
 
@@ -177,7 +177,7 @@ _《M3U8 格式》概要_
 
 ---
 
-![《TS 格式》概要](assets/resource/av-guide/TS格式.png)
+![《TS 格式》概要](assets/resource/career-guide/TS格式.png)
 _《TS 格式》概要_
 
 
@@ -196,7 +196,7 @@ _《TS 格式》概要_
 
 ---
 
-![《RTMP 协议》概要](assets/resource/av-guide/RTMP协议.png)
+![《RTMP 协议》概要](assets/resource/career-guide/RTMP协议.png)
 _《RTMP 协议》概要_
 
 
@@ -207,7 +207,7 @@ _《RTMP 协议》概要_
 
 ---
 
-![《KCP 协议》概要](assets/resource/av-guide/KCP协议.png)
+![《KCP 协议》概要](assets/resource/career-guide/KCP协议.png)
 _《KCP 协议》概要_
 
 - 16）[《KCP 协议：自研常用参考协议》](https://mp.weixin.qq.com/s/-O3tGTisekuTwgzHSbx6dg)
@@ -216,7 +216,7 @@ _《KCP 协议》概要_
 
 ---
 
-![《HLS 协议》概要](assets/resource/av-guide/HLS协议.png)
+![《HLS 协议》概要](assets/resource/career-guide/HLS协议.png)
 _《HLS 协议》概要_
 
 - 17）[《HLS 协议：直播回放常用协议》](https://mp.weixin.qq.com/s/c4p_6xxQxwYZON2W2luEyA)
@@ -238,7 +238,7 @@ _《HLS 协议》概要_
 
 ---
 
-![《OpenGL 基础概念》概要](assets/resource/av-guide/OpenGL基础概念.png)
+![《OpenGL 基础概念》概要](assets/resource/career-guide/OpenGL基础概念.png)
 _《OpenGL 基础概念》概要_
 
 - 18）[《OpenGL 基础概念（1）：渲染架构、状态机、渲染管线》](https://mp.weixin.qq.com/s/XNiDto9ABfTCCpptDktHng)
@@ -279,7 +279,7 @@ _《OpenGL 基础概念》概要_
 
 ---
 
-![《FFmpeg 工具》概要](assets/resource/av-guide/FFmpeg工具.png)
+![《FFmpeg 工具》概要](assets/resource/career-guide/FFmpeg工具.png)
 _《FFmpeg 工具》概要_
 
 
@@ -290,7 +290,7 @@ _《FFmpeg 工具》概要_
 ---
 
 
-![《可视化音视频分析工具》概要](assets/resource/av-guide/可视化音视频分析工具.png)
+![《可视化音视频分析工具》概要](assets/resource/career-guide/可视化音视频分析工具.png)
 _《可视化音视频分析工具》概要_
 
 - 25）[《可视化音视频分析工具》](https://mp.weixin.qq.com/s/jCYih3qgEIUctuWxn0aTGQ)
@@ -300,7 +300,7 @@ _《可视化音视频分析工具》概要_
 ---
 
 
-![《数据抓包工具》概要](assets/resource/av-guide/数据抓包工具.png)
+![《数据抓包工具》概要](assets/resource/career-guide/数据抓包工具.png)
 _《数据抓包工具》概要_
 
 - 26）[《数据抓包工具》](https://mp.weixin.qq.com/s/EAJGSprnSXEb_dzMx71fZw)
@@ -310,7 +310,7 @@ _《数据抓包工具》概要_
 
 ---
 
-![《iOS 逆向工具》概要](assets/resource/av-guide/iOS逆向工具.png)
+![《iOS 逆向工具》概要](assets/resource/career-guide/iOS逆向工具.png)
 _《iOS 逆向工具》概要_
 
 - 27）[《iOS 逆向工具》](https://mp.weixin.qq.com/s/QhVyUzyZN_h1qjEZhO9jYQ)
@@ -333,7 +333,7 @@ _《iOS 逆向工具》概要_
 
 ---
 
-![《iOS AVDemo》概要](assets/resource/av-guide/iOSAVDemo.png)
+![《iOS AVDemo》概要](assets/resource/career-guide/iOSAVDemo.png)
 _《iOS AVDemo》概要_
 
 - 28）[《iOS AVDemo（1）：音频采集》](https://mp.weixin.qq.com/s/FDR_5cMfAJQgZhSvjgeWYA)
@@ -352,7 +352,7 @@ _《iOS AVDemo》概要_
 
 ---
 
-![《Android AVDemo》概要](assets/resource/av-guide/AndroidAVDemo.png)
+![《Android AVDemo》概要](assets/resource/career-guide/AndroidAVDemo.png)
 _《Android AVDemo》概要_
 
 - 41）[《Android AVDemo（1）：音频采集》](https://mp.weixin.qq.com/s/o0JqYnjY0aR3oGCEXk7vcQ)
@@ -379,7 +379,7 @@ _《Android AVDemo》概要_
 ---
 
 
-![《RenderDemo》概要](assets/resource/av-guide/RenderDemo.png)
+![《RenderDemo》概要](assets/resource/career-guide/RenderDemo.png)
 _《RenderDemo》概要_
 
 - 54）[《RenderDemo（1）：用 OpenGL 画一个三角形》](https://mp.weixin.qq.com/s/b-nFCBMf-oaayyG8a86mgw)
@@ -396,7 +396,7 @@ _《RenderDemo》概要_
 
 ---
 
-![《iOS 音频处理框架及重点 API 合集》概要](assets/resource/av-guide/iOS音频处理框架及重点API.png)
+![《iOS 音频处理框架及重点 API 合集》概要](assets/resource/career-guide/iOS音频处理框架及重点API.png)
 _《iOS 音频处理框架及重点 API 合集》概要_
 
 
@@ -406,7 +406,7 @@ _《iOS 音频处理框架及重点 API 合集》概要_
 
 ---
 
-![《iOS 视频处理框架及重点 API 合集》概要](assets/resource/av-guide/iOS视频处理框架及重点API.png)
+![《iOS 视频处理框架及重点 API 合集》概要](assets/resource/career-guide/iOS视频处理框架及重点API.png)
 _《iOS 视频处理框架及重点 API 合集》概要_
 
 - 57）[《iOS 视频处理框架及重点 API 合集》](https://mp.weixin.qq.com/s/QqkwaVz4lX_yy4sGusoThg)
@@ -414,7 +414,7 @@ _《iOS 视频处理框架及重点 API 合集》概要_
 ---
 
 
-![《WWDC 2022 音视频相关的更新》概要](assets/resource/av-guide/WWDC2022音视频相关的更新.png)
+![《WWDC 2022 音视频相关的更新》概要](assets/resource/career-guide/WWDC2022音视频相关的更新.png)
 _《WWDC 2022 音视频相关的更新》概要_
 
 - 58）[《一文看完 WWDC 2022 音视频相关的更新要点》](https://mp.weixin.qq.com/s/K5DtSvK3RGLZZ5V761WllA)
@@ -436,7 +436,7 @@ _《WWDC 2022 音视频相关的更新》概要_
 
 ---
 
-![《采集预览优化》概要](assets/resource/av-guide/采集预览优化.png)
+![《采集预览优化》概要](assets/resource/career-guide/采集预览优化.png)
 _《采集预览优化》概要_
 
 
@@ -447,7 +447,7 @@ _《采集预览优化》概要_
 
 ---
 
-![《视频录制优化》概要](assets/resource/av-guide/视频录制优化.png)
+![《视频录制优化》概要](assets/resource/career-guide/视频录制优化.png)
 _《视频录制优化》概要_
 
 - 62）[《音视频生产关键指标：视频录制优化》](https://mp.weixin.qq.com/s/Y2gFat4iZXk9B-GE72jNcg)
@@ -457,7 +457,7 @@ _《视频录制优化》概要_
 ---
 
 
-![《视频编辑优化》概要](assets/resource/av-guide/视频编辑优化.png)
+![《视频编辑优化》概要](assets/resource/career-guide/视频编辑优化.png)
 _《视频编辑优化》概要_
 
 - 63）[《音视频生产关键指标：视频编辑优化》](https://mp.weixin.qq.com/s/uBr0Um40ZztFsfGCWPxpZA)
@@ -467,7 +467,7 @@ _《视频编辑优化》概要_
 ---
 
 
-![《视频质量优化》概要](assets/resource/av-guide/视频质量优化.png)
+![《视频质量优化》概要](assets/resource/career-guide/视频质量优化.png)
 _《视频质量优化》概要_
 
 - 64）[《音视频生产关键指标：视频质量优化》](https://mp.weixin.qq.com/s/Qj46I9llahphBRAtAJ0DNw)
@@ -476,7 +476,7 @@ _《视频质量优化》概要_
 
 ---
 
-![《视频发布优化》概要](assets/resource/av-guide/视频发布优化.png)
+![《视频发布优化》概要](assets/resource/career-guide/视频发布优化.png)
 _《视频发布优化》概要_
 
 - 65）[《音视频生产关键指标：视频发布优化》](https://mp.weixin.qq.com/s/Kgpy3r9PVGO78G-TzFXWaQ)
@@ -492,7 +492,7 @@ _《视频发布优化》概要_
 
 ---
 
-![《播放器成功率优化》概要](assets/resource/av-guide/播放器成功率优化.png)
+![《播放器成功率优化》概要](assets/resource/career-guide/播放器成功率优化.png)
 _《播放器成功率优化》概要_
 
 
@@ -502,7 +502,7 @@ _《播放器成功率优化》概要_
 
 ---
 
-![《播放器秒开优化》概要](assets/resource/av-guide/播放器秒开优化.png)
+![《播放器秒开优化》概要](assets/resource/career-guide/播放器秒开优化.png)
 _《播放器秒开优化》概要_
 
 - 67）[《音视频消费关键指标：播放器秒开优化》](https://mp.weixin.qq.com/s/8n8cgsv2o-ziFxK9fJO2Yw)
@@ -514,7 +514,7 @@ _《播放器秒开优化》概要_
 
 
 
-![《播放器卡顿优化》概要](assets/resource/av-guide/播放器卡顿优化.png)
+![《播放器卡顿优化》概要](assets/resource/career-guide/播放器卡顿优化.png)
 _《播放器卡顿优化》概要_
 
 - 68）[《音视频消费关键指标：播放器卡顿优化》](https://mp.weixin.qq.com/s/jx0krbxkSGdPBkiI1s282g)
@@ -526,7 +526,7 @@ _《播放器卡顿优化》概要_
 
 
 
-![《直播延时优化》概要](assets/resource/av-guide/直播延时优化.png)
+![《直播延时优化》概要](assets/resource/career-guide/直播延时优化.png)
 _《直播延时优化》概要_
 
 - 69）[《音视频消费关键指标：直播延时优化》](https://mp.weixin.qq.com/s/WOZFaCk4fP_xIbNKPhcPfA)
