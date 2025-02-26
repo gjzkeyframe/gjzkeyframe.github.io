@@ -37,7 +37,7 @@ mermaid: true
 
 H.264 是由国际标准组织机构（ISO）下属的运动图象专家组（MPEG）和国际电传视讯联盟远程通信标准化组织（ITU-T）开发的系列编码标准之一。
 
-![](./resource/video_encode_develop.png)
+![](assets/resource/av-interview-qa/video_encode_develop.png)
 	
 **2）码流结构**
 
@@ -46,7 +46,7 @@ H.264 原始码流（裸流）是由⼀个接⼀个 NALU 组成，它的功能�
 - 视频编码层 VCL（Video Coding Layer）：是对视频编码核心算法过程、子宏块、宏块、片等概念的定义。这层主要是为了尽可能的独立于网络来高效的对视频内容进行编码。
 - 网路抽象层 NAL（Network Abstract Layer）：负责将 VCL 产生的比特字符串适配到各种各样的网络和多元环境中，覆盖了所有片级以上的语法级别。
 
-![](./resource/nalu.png)
+![](assets/resource/av-interview-qa/nalu.png)
 
 **3）两种封装**
 
@@ -88,13 +88,13 @@ VCL 层负责视频的信号处理，包含压缩，量化等处理，NAL 层则
 
 NALU 结构一般为：`[NALU Header][NALU Payload]`，可以根据 `[NALU Header]` 这 1 个字节来获取帧类型，它的结构如下图：
 
-![](./resource/nula_type1.png)
+![](assets/resource/av-interview-qa/nula_type1.png)
 
 - F：1bit，禁⽌位，H.264 规范中规定了这⼀位必须为 0，值为 1 表示语法出错（编码出错），不可用。
 - R：2bit，被参考的级别，重要性指示位，取值越⼤，表示当前 NALU 越重要，需要优先受到保护，如果当前 NALU 是属于参考帧的⽚、序列参数集或图像参数集这些重要的单位时，本句法元素必需⼤于 0。
 - T：5bit，负荷数据类型，表示 NALU 单元的类型，1～12 由 H.264 使⽤，24～31 由 H.264 以外的应⽤使⽤。
 
-![](./resource/nula_type2.png)
+![](assets/resource/av-interview-qa/nula_type2.png)
 
 常用的 NAL 头的取值类型：
 
@@ -114,7 +114,7 @@ NALU 结构一般为：`[NALU Header][NALU Payload]`，可以根据 `[NALU Heade
 
 我们以下图为例来介绍一下 I、P、B 帧的编码过程：
 
-![](./resource/frame_order.png)
+![](assets/resource/av-interview-qa/frame_order.png)
 
 编码器编码一个 I 帧，然后向后跳过几个帧，用这个 I 帧作为基准帧对一个未来 P 帧进行编码，然后跳回到这个 I 帧之后的下一个帧。I 帧和 P 帧之间的帧可以被编码为 B 帧。之后，编码器会再次跳过几个帧，使用第一个 P 帧作为基准帧，编码另外一个 P 帧，然后再次跳回，用 B 帧填充显示序列中的空隙。这个过程不断持续，然后每间隔一定的帧数后插入一个新的 I 帧。
 
@@ -133,7 +133,7 @@ NALU 结构一般为：`[NALU Header][NALU Payload]`，可以根据 `[NALU Heade
 - 比起 H.264，H.265 提供了更多不同的工具来降低码率，以编码单位来说，H.264 中每个宏块（macroblock/MB）大小最大为 16x16 像素，而 H.265 的编码单位最大为 64x64；
 - H.265 的帧内预测模式支持 35 种方向（而 H.264 只支持 8 种），并且提供了更好的运动补偿处理和矢量预测方法。
 
-![](./resource/h264_vs_h265_1.png)
+![](assets/resource/av-interview-qa/h264_vs_h265_1.png)
 
 参考：[Difference Between H.264 and H.265](https://www.gumlet.com/learn/h264-vs-h265/ "Difference Between H.264 and H.265")
 
@@ -145,7 +145,7 @@ NALU 结构一般为：`[NALU Header][NALU Payload]`，可以根据 `[NALU Heade
 - 兼容性：在兼容性方面，H.264 胜过 H.265，与 H.264 相比，H.265 的普及程度相当落后。如果 100 个设备和平台支持 H.264 编解码器，您会发现只有 30 个相应的设备和平台支持 H.265。您不能否认 H.265 是未来的编解码器，并且缓慢但肯定地，更多的平台和设备将适应 H.265；
 - 性能：关于整体性能比较，H.265 无疑胜过 H.264，但这并非没有它的背景。H.264 具有适用于几乎所有常见设备的日常用例。然而，H.265 编码需要高计算能力。因此，H.265 可以比 H.264 更有效地压缩视频，同时保持相同水平的图像质量。H.264 性能达不到 4K 流媒体的标准，但 H.265 做到了这一点。
 
-![](./resource/h264_vs_h265_2.png)
+![](assets/resource/av-interview-qa/h264_vs_h265_2.png)
 
 <!-- 参考：[Difference Between H.264 and H.265](https://www.gumlet.com/learn/h264-vs-h265/ "Difference Between H.264 and H.265")
  -->

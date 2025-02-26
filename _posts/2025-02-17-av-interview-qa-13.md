@@ -143,7 +143,7 @@ IDR 帧：IDR 帧是一种特殊的 I 帧，它具有刷新解码器缓冲区的
 
 因此 IDR 帧一定是 I 帧，但是 I 帧则不一定是 IDR 帧。在遇到 OpenGOP 的情况下，就会出现 I 帧为非 IDR 帧的情况。
 
-![OpenGOP](assets/resource/av-interview-qa/opengop.wep)
+![OpenGOP](assets/resource/av-interview-qa/opengop.webp)
 
 如上图所示右数第一个 I 帧就是一个非 IDR 的 I 帧，前一个 GOP 中的 B 帧依赖了当前 GOP 的 I 帧。所以右数第一个 I 帧接受时，不能刷新解码器，否则上一个 GOP 中的 B 帧无法被成功解码，可能会出现花屏或者报错。
 

@@ -37,7 +37,7 @@ mermaid: true
 
 模拟数据 → 采样 → 量化 → 编码 → 数字信号
 
-![](./resource/pcm.png)
+![](assets/resource/av-interview-qa/pcm.png)
 
 **2）数据组成**
 
@@ -58,7 +58,7 @@ mermaid: true
 - 其它
     - 空间大小 = 时长 * 采样频率 * 声道数 * (采样位数 / 8);
 
-![](./resource/audio_channel.png)
+![](assets/resource/av-interview-qa/audio_channel.png)
 
 
 
@@ -83,7 +83,7 @@ mermaid: true
   
 **3）时域 vs. 频域**
 
-![](./resource/fly.png)
+![](assets/resource/av-interview-qa/fly.png)
 
 ## 3、PCM 数据经过 AAC 编码器编码后，直接写 .aac 文件会怎么样？
 
