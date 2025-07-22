@@ -11,17 +11,20 @@ mermaid: true
 ---
 
 
-> 本文转自微信公众号 `关键帧Keyframe`，推荐您关注来获取**音视频、AI 领域的最新技术和产品信息**：
+>想要学习 AI 技术的朋友，快来加入我们的<a href="https://t.zsxq.com/nd3Wj" target="_blank" rel="noopener noreferrer">【AI 赚钱社群】</a>，加入后你就能：
 >
->![微信公众号](assets/img/keyframe-mp.jpg)
->_微信扫码关注我们_
+>- 1）获得全套 Stable Diffusion WebUI AI 图片和视频制作教程
+>- 2）获得全套 ComfyUI AI 图片和视频制作教程
+>- 3）获得自动化批量生产 AI 套图的程序
+>- 4）获得 <a href="https://www.aigchub.ai" target="_blank" rel="noopener noreferrer">AIGCHub</a> 创作者资格，用 AI 生产图片和视频来赚钱
 >
->您还可以加入知识星球 `关键帧的音视频开发圈` 来一起交流工作中的**技术难题、职场经验**：
+>现在加入，送你一张 20 元优惠券：<a href="https://t.zsxq.com/nd3Wj" target="_blank" rel="noopener noreferrer">点击领取优惠券</a>
 >
->![知识星球](assets/img/keyframe-zsxq.png)
->_微信扫码加入星球_
+>![知识星球新人优惠券](assets/img/aigc-zsxq-coupon.png){: w="300" }
+>_微信扫码也可领取优惠券_
 {: .prompt-tip }
 
+---
 
 最近一位推友 [@xiaokedada](https://x.com/xiaokedada/status/1908530319856460282?s=46&t=f08eAX6xkfMpRQuEJ6qyQA "@xiaokedada") 分享了他对 Cursor 系统提示词词的一些研究，让我们来看看。
 
@@ -159,4 +162,10 @@ Some rules may be automatically attached to the conversation if the user attache
 也试过 cloudflare 的 AI Gateway，不过好像会暴露 ip 导致被墙。
 
 
+---
 
+> 本文转自微信公众号 `关键帧Keyframe`，推荐您关注来获取**音视频、AI 领域的最新技术和产品信息**：
+>
+>![微信公众号](assets/img/keyframe-mp.jpg){: w="300" }
+>_微信扫码关注我们_
+{: .prompt-tip }

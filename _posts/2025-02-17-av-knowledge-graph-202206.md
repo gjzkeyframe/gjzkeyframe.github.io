@@ -10,15 +10,18 @@ math: true
 mermaid: true
 ---
 
-> 本文转自微信公众号 `关键帧Keyframe`，推荐您关注来获取**音视频、AI 领域的最新技术和产品信息**：
+>想要学习和提升音视频技术的朋友，快来加入我们的<a href="https://t.zsxq.com/jRprT" target="_blank" rel="noopener noreferrer">【音视频技术社群】</a>，加入后你就能：
 >
->![微信公众号](assets/img/keyframe-mp.jpg)
->_微信扫码关注我们_
+>- 1）下载 30+ 个开箱即用的「音视频及渲染 Demo 源代码」
+>- 2）下载包含 500+ 知识条目的完整版「音视频知识图谱」
+>- 3）下载包含 200+ 题目的完整版「音视频面试题集锦」
+>- 4）技术和职业发展咨询 100% 得到回答
+>- 5）获得简历优化建议和大厂内推
+>  
+>现在加入，送你一张 20 元优惠券：<a href="https://t.zsxq.com/jRprT" target="_blank" rel="noopener noreferrer">点击领取优惠券</a>
 >
->您还可以加入知识星球 `关键帧的音视频开发圈` 来一起交流工作中的**技术难题、职场经验**：
->
->![知识星球](assets/img/keyframe-zsxq.png)
->_微信扫码加入星球_
+>![知识星球新人优惠券](assets/img/keyframe-zsxq-coupon.png){: w="300" }
+>_微信扫码也可领取优惠券_
 {: .prompt-tip }
 
 前些时间，我在知识星球上创建了一个音视频技术社群：**关键帧的音视频开发圈**，在这里群友们会一起做一些打卡任务。比如：周期性地整理音视频相关的面试题，汇集一份**音视频面试题集锦**，你可以看看这个合集：[音视频面试题集锦](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MjM5MTkxOTQyMQ==&action=getalbum&album_id=2380776196751425539#wechat_redirect)。再比如：循序渐进地归纳总结音视频技术知识，绘制一幅**音视频知识图谱**，你可以看看这个合集：[音视频知识图谱](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MjM5MTkxOTQyMQ==&action=getalbum&album_id=2349658423078092802#wechat_redirect)。

@@ -10,15 +10,18 @@ math: true
 mermaid: true
 ---
 
-> 本文转自微信公众号 `关键帧Keyframe`，推荐您关注来获取**音视频、AI 领域的最新技术和产品信息**：
+>想要学习和提升音视频技术的朋友，快来加入我们的<a href="https://t.zsxq.com/jRprT" target="_blank" rel="noopener noreferrer">【音视频技术社群】</a>，加入后你就能：
 >
->![微信公众号](assets/img/keyframe-mp.jpg)
->_微信扫码关注我们_
+>- 1）下载 30+ 个开箱即用的「音视频及渲染 Demo 源代码」
+>- 2）下载包含 500+ 知识条目的完整版「音视频知识图谱」
+>- 3）下载包含 200+ 题目的完整版「音视频面试题集锦」
+>- 4）技术和职业发展咨询 100% 得到回答
+>- 5）获得简历优化建议和大厂内推
+>  
+>现在加入，送你一张 20 元优惠券：<a href="https://t.zsxq.com/jRprT" target="_blank" rel="noopener noreferrer">点击领取优惠券</a>
 >
->您还可以加入知识星球 `关键帧的音视频开发圈` 来一起交流工作中的**技术难题、职场经验**：
->
->![知识星球](assets/img/keyframe-zsxq.png)
->_微信扫码加入星球_
+>![知识星球新人优惠券](assets/img/keyframe-zsxq-coupon.png){: w="300" }
+>_微信扫码也可领取优惠券_
 {: .prompt-tip }
 
 iOS/Android 客户端开发同学如果想要开始学习音视频开发，最丝滑的方式是对[音视频基础概念知识](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MjM5MTkxOTQyMQ==&action=getalbum&album_id=2140155659944787969#wechat_redirect)有一定了解后，再借助 iOS/Android 平台的音视频能力上手去实践音视频的`采集 → 编码 → 封装 → 解封装 → 解码 → 渲染`过程，并借助[音视频实用工具](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MjM5MTkxOTQyMQ==&action=getalbum&album_id=2216997905264082945#wechat_redirect)来分析和理解对应的音视频数据。
