@@ -1522,3 +1522,14 @@ RTMP 是目前在直播场景广泛使用的协议，通过上文的介绍，我
 - [RTMP Specification 1.0](https://www.adobe.com/content/dam/acom/en/devnet/rtmp/pdf/rtmp_specification_1.0.pdf)
 
 
+
+
+
+---
+
+> 本文转自微信公众号 `关键帧Keyframe`，推荐您关注来获取**音视频、AI 领域的最新技术和产品信息**：
+>
+>![微信公众号](assets/img/keyframe-mp.jpg){: w="300" }
+>_微信扫码关注我们_
+{: .prompt-tip }
+

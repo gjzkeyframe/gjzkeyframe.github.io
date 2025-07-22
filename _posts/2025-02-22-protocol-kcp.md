@@ -463,3 +463,14 @@ KCP 可以用在 TCP 的基建上，在登陆时由服务端返回 UDP 端口和
 - [KCP 简介](https://github.com/skywind3000/kcp/wiki)
 - [KCP 协议快在哪](https://wetest.qq.com/lab/view/391.html)
 
+
+
+
+---
+
+> 本文转自微信公众号 `关键帧Keyframe`，推荐您关注来获取**音视频、AI 领域的最新技术和产品信息**：
+>
+>![微信公众号](assets/img/keyframe-mp.jpg){: w="300" }
+>_微信扫码关注我们_
+{: .prompt-tip }
+

@@ -91,3 +91,14 @@ HandBrakeCLI -i input.mp4 -o output.mp4 --preset "Fast 1080p30"
 - **VLC Media Player**：一个多功能媒体播放器，具有内置的转码功能。
 - **MediaCoder**：一个免费的媒体转码工具，支持各种格式和编解码器。
 
+
+
+
+---
+
+> 本文转自微信公众号 `关键帧Keyframe`，推荐您关注来获取**音视频、AI 领域的最新技术和产品信息**：
+>
+>![微信公众号](assets/img/keyframe-mp.jpg){: w="300" }
+>_微信扫码关注我们_
+{: .prompt-tip }
+

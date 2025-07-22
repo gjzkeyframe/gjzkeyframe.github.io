@@ -1039,3 +1039,14 @@ Although video standards assume a display gamma of about 2.2, a gamma of about 2
 - [RGB to YCrCb Color‐Space Converter v7.1](https://www.xilinx.com/support/documentation/ip_documentation/v_rgb2ycrcb/v7_1/pg013_v_rgb2ycrcb.pdf)
 
 
+
+
+
+---
+
+> 本文转自微信公众号 `关键帧Keyframe`，推荐您关注来获取**音视频、AI 领域的最新技术和产品信息**：
+>
+>![微信公众号](assets/img/keyframe-mp.jpg){: w="300" }
+>_微信扫码关注我们_
+{: .prompt-tip }
+

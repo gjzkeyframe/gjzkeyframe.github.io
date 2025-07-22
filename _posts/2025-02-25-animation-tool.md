@@ -152,3 +152,14 @@ PAG 支持几乎所有 AE 特性的导出，包括第三方插件效果和视频
 - [PAG Demo](https://pag.art/docs/pad-demo-download.html "PAG Demo")
 - [Lottie iOS 工程](https://github.com/airbnb/lottie-ios "Lottie iOS 工程")
 - [Lottie Android 工程](https://github.com/airbnb/lottie-android "Lottie Android 工程")
+
+
+
+---
+
+> 本文转自微信公众号 `关键帧Keyframe`，推荐您关注来获取**音视频、AI 领域的最新技术和产品信息**：
+>
+>![微信公众号](assets/img/keyframe-mp.jpg){: w="300" }
+>_微信扫码关注我们_
+{: .prompt-tip }
+

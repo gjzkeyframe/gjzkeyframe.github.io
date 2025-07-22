@@ -10,19 +10,23 @@ math: true
 mermaid: true
 ---
 
->想要学习和提升音视频技术的朋友，快来加入我们的<a href="https://t.zsxq.com/jRprT" target="_blank" rel="noopener noreferrer">【音视频技术社群】</a>，加入后你就能：
+
+>想要学习 AI 技术的朋友，快来加入我们的<a href="https://t.zsxq.com/nd3Wj" target="_blank" rel="noopener noreferrer">【AI 赚钱社群】</a>，加入后你就能：
 >
->- 1）下载 30+ 个开箱即用的「音视频及渲染 Demo 源代码」
->- 2）下载包含 500+ 知识条目的完整版「音视频知识图谱」
->- 3）下载包含 200+ 题目的完整版「音视频面试题集锦」
->- 4）技术和职业发展咨询 100% 得到回答
->- 5）获得简历优化建议和大厂内推
->  
->现在加入，送你一张 20 元优惠券：<a href="https://t.zsxq.com/jRprT" target="_blank" rel="noopener noreferrer">点击领取优惠券</a>
+>- 1）获得全套 Stable Diffusion WebUI AI 图片和视频制作教程
+>- 2）获得全套 ComfyUI AI 图片和视频制作教程
+>- 3）获得自动化批量生产 AI 套图的程序
+>- 4）获得 <a href="https://www.aigchub.ai" target="_blank" rel="noopener noreferrer">AIGCHub</a> 创作者资格，用 AI 生产图片和视频来赚钱
 >
->![知识星球新人优惠券](assets/img/keyframe-zsxq-coupon.png){: w="300" }
+>现在加入，送你一张 20 元优惠券：<a href="https://t.zsxq.com/nd3Wj" target="_blank" rel="noopener noreferrer">点击领取优惠券</a>
+>
+>![知识星球新人优惠券](assets/img/aigc-zsxq-coupon.png){: w="300" }
 >_微信扫码也可领取优惠券_
 {: .prompt-tip }
+
+---
+
+
 
 人工智能发展得比奶茶店开张还快，各种 AI 编程工具层出不穷，誓要让程序员们少掉几根头发。今天咱们就来扒一扒五款新晋网红工具：**v0**、**Bolt.new**、**Cursor**、**Windsurf**和**Trae**，看看谁才是你的摸鱼好帮手！
 
@@ -246,4 +250,15 @@ _Trae_
 - **快速造轮子上 Trae**：适合「给我个需求，明天就上线」的卷王
 
 各位程序媛/猿们，按需领取你的摸鱼神器吧！记住，工具再好，也别忘记：**代码还是要自己写的，BUG 还是要自己修的**（除非 AI 能帮你背锅）😜
+
+
+
+
+---
+
+> 本文转自微信公众号 `关键帧Keyframe`，推荐您关注来获取**音视频、AI 领域的最新技术和产品信息**：
+>
+>![微信公众号](assets/img/keyframe-mp.jpg){: w="300" }
+>_微信扫码关注我们_
+{: .prompt-tip }
 

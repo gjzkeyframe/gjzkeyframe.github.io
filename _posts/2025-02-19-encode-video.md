@@ -1267,3 +1267,14 @@ iPhone 的硬编在量化阶段使用了加权量化矩阵，更适合人眼，�
 - [ISO/IEC 第一版](https://www.iso.org/standard/73022.html)
 - [VSEI 标准的第一版](https://www.itu.int/rec/T-REC-H.274/en)
 
+
+
+
+---
+
+> 本文转自微信公众号 `关键帧Keyframe`，推荐您关注来获取**音视频、AI 领域的最新技术和产品信息**：
+>
+>![微信公众号](assets/img/keyframe-mp.jpg){: w="300" }
+>_微信扫码关注我们_
+{: .prompt-tip }
+

@@ -50,3 +50,14 @@ mermaid: true
 4. **工作节点**：工作节点从队列中拉取流，并使用 FFmpeg 或类似工具以低延迟设置进行转码。
 5. **分发（WHEP 或 LL-HLS）**：通过 WebRTC 或低延迟 HLS（LL-HLS）将流传递给最终用户。
 
+
+
+
+---
+
+> 本文转自微信公众号 `关键帧Keyframe`，推荐您关注来获取**音视频、AI 领域的最新技术和产品信息**：
+>
+>![微信公众号](assets/img/keyframe-mp.jpg){: w="300" }
+>_微信扫码关注我们_
+{: .prompt-tip }
+

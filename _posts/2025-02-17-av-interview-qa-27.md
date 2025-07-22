@@ -144,3 +144,14 @@ C++ 内存泄露是如何产生的：
 ![限时优惠，扫码加入](assets/img/keyframe-zsxq.png)
 
 
+
+
+
+---
+
+> 本文转自微信公众号 `关键帧Keyframe`，推荐您关注来获取**音视频、AI 领域的最新技术和产品信息**：
+>
+>![微信公众号](assets/img/keyframe-mp.jpg){: w="300" }
+>_微信扫码关注我们_
+{: .prompt-tip }
+

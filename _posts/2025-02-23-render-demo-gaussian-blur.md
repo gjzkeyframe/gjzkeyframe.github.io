@@ -519,3 +519,14 @@ public void onFrameAvailable(KFFrame frame) {
 - [高斯模糊算法 ](https://www.ruanyifeng.com/blog/2012/11/gaussian_blur.html "高斯模糊算法")
 - [高斯模糊 OpenGL 代码实现](https://cloud.tencent.com/developer/article/1806913 "高斯模糊OpenGL代码实现")
 
+
+
+
+---
+
+> 本文转自微信公众号 `关键帧Keyframe`，推荐您关注来获取**音视频、AI 领域的最新技术和产品信息**：
+>
+>![微信公众号](assets/img/keyframe-mp.jpg){: w="300" }
+>_微信扫码关注我们_
+{: .prompt-tip }
+

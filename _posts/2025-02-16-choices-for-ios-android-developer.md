@@ -125,3 +125,14 @@ _客户端业务开发职业发展选择_
 ![微信扫码二维码加入我们](assets/img/keyframe-zsxq.png)
 
 
+
+
+
+---
+
+> 本文转自微信公众号 `关键帧Keyframe`，推荐您关注来获取**音视频、AI 领域的最新技术和产品信息**：
+>
+>![微信公众号](assets/img/keyframe-mp.jpg){: w="300" }
+>_微信扫码关注我们_
+{: .prompt-tip }
+
