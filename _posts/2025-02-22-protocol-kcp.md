@@ -472,5 +472,10 @@ KCP 可以用在 TCP 的基建上，在登陆时由服务端返回 UDP 端口和
 >
 >![微信公众号](assets/img/keyframe-mp.jpg){: w="300" }
 >_微信扫码关注我们_
+>
+>你还可以加入我们的微信群：
+>
+>![关键帧的音视频开发群](assets/img/av-wechat-group.jpg){: w="600" }
+>_微信扫码进群_
 {: .prompt-tip }
 

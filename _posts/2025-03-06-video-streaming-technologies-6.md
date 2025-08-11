@@ -89,5 +89,10 @@ ffmpeg -i input.mp4 -filter_complex "[0:v]split=3[v1][v2][v3];[v1]scale=w=1280:h
 >
 >![微信公众号](assets/img/keyframe-mp.jpg){: w="300" }
 >_微信扫码关注我们_
+>
+>你还可以加入我们的微信群：
+>
+>![关键帧的音视频开发群](assets/img/av-wechat-group.jpg){: w="600" }
+>_微信扫码进群_
 {: .prompt-tip }
 

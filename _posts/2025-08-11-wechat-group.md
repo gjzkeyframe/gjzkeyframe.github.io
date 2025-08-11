@@ -10,12 +10,12 @@ math: false
 mermaid: false
 image:
   path: assets/img/av-wechat-group.jpg
-  alt: Audio/Video Developers Group
+  alt: 微信扫码加入音视频开发群
 ---
 
 >想要学习和提升音视频开发技术的朋友，快来加入【关键帧的音视频开发群】吧！
 >
->![关键帧的音视频开发群](assets/img/av-wechat-group.jpg){: w="300" }
+>![关键帧的音视频开发群](assets/img/av-wechat-group.jpg){: w="600" }
 >_微信扫码进群_
 >
 >上面的二维码如果过期失效，请先加我微信，我来拉你入群：
