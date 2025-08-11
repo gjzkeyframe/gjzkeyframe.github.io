@@ -10,7 +10,7 @@ math: false
 mermaid: false
 image:
   path: assets/img/av-wechat-group.jpg
-  alt: Audio/Video Developers Group.
+  alt: Audio/Video Developers Group
 ---
 
 >想要学习和提升音视频开发技术的朋友，快来加入【关键帧的音视频开发群】吧！
