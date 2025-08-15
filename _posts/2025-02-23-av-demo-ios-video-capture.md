@@ -729,7 +729,7 @@ _AVCaptureConnection 连接单或多输入到单输出_
 >![微信公众号](assets/img/keyframe-mp.jpg){: w="300" }
 >_微信扫码关注我们_
 >
->你还可以加入我们的微信群：
+>你还可以加入我们的微信群和更多同行朋友来交流和讨论：
 >
 >![关键帧的音视频开发群](assets/img/av-wechat-group.jpg){: w="600" }
 >_微信扫码进群_
