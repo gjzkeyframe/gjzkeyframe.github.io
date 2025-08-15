@@ -153,13 +153,7 @@ ICE 层选择两个对等方之一作为 **控制代理** 。这是将最终决�
 
 此外，当一个之前已经创建了提议的对等方收到远程对等方的提议时，ICE 代理将自动发起回滚。换句话说，如果本地对等方处于 `have-local-offer` 状态，表明本地对等方之前已经发送了提议，调用 `setRemoteDescription()` 并收到提议将触发回滚，以便协商从远程对等方作为呼叫者切换到本地对等方作为呼叫者。
 
-### ICE 重启
 
-了解 ICE 重启过程。
-
-## 复杂图表中的整个交换过程
-
-![img](/en-US/docs/Web/API/WebRTC_API/Connectivity/webrtc-complete-diagram.png)
 
 ---
 
