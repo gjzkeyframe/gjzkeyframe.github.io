@@ -378,35 +378,35 @@ function createPeerConnection() {
 
 `onicecandidate`
 
-当本地 ICE 层需要你通过信令服务器向另一方发送 ICE 候选时，它会调用你的 `icecandidate` 事件处理程序。有关更多信息和此示例的代码，请参阅[发送 ICE 候选](#sending-ice-candidates)。
+当本地 ICE 层需要你通过信令服务器向另一方发送 ICE 候选时，它会调用你的 `icecandidate` 事件处理程序。有关更多信息和此示例的代码，请参阅[发送 ICE 候选](https://gjzkeyframe.github.io/posts/webrtc-signaling-video-call/#sending-ice-candidates)。
 
 `ontrack`
 
-此 `track` 事件的处理程序由本地 WebRTC 层在向连接中添加轨道时调用。这可以让你将传入媒体连接到元素以进行显示，例如。有关详细信息，请参阅[接收新流](#receiving-new-streams)。
+此 `track` 事件的处理程序由本地 WebRTC 层在向连接中添加轨道时调用。这可以让你将传入媒体连接到元素以进行显示，例如。有关详细信息，请参阅[接收新流](https://gjzkeyframe.github.io/posts/webrtc-signaling-video-call/#receiving-new-streams)。
 
 `onnegotiationneeded`
 
-每当 WebRTC 基础设施需要你重新开始会话协商过程时，都会调用此函数。它的作用是创建并发送提议，要求另一方与我们连接。有关详细信息，请参阅[开始协商](#starting-negotiation)。
+每当 WebRTC 基础设施需要你重新开始会话协商过程时，都会调用此函数。它的作用是创建并发送提议，要求另一方与我们连接。有关详细信息，请参阅[开始协商](https://gjzkeyframe.github.io/posts/webrtc-signaling-video-call/#starting-negotiation)。
 
 `onremovetrack`
 
-这是 `ontrack` 的对应方，用于处理 `removetrack` 事件；当远程对等方从发送的媒体中移除轨道时，会将该事件发送到 `RTCPeerConnection`。有关详细信息，请参阅[处理轨道移除](#handling-the-removal-of-tracks)。
+这是 `ontrack` 的对应方，用于处理 `removetrack` 事件；当远程对等方从发送的媒体中移除轨道时，会将该事件发送到 `RTCPeerConnection`。有关详细信息，请参阅[处理轨道移除](https://gjzkeyframe.github.io/posts/webrtc-signaling-video-call/#handling-the-removal-of-tracks)。
 
 `oniceconnectionstatechange`
 
-ICE 层发送 `iceconnectionstatechange` 事件，以通知你 ICE 连接状态的变化。这可以帮助你知道连接何时失败或丢失。我们将在 [ICE 连接状态](#ice-connection-state) 中看到此示例的代码。
+ICE 层发送 `iceconnectionstatechange` 事件，以通知你 ICE 连接状态的变化。这可以帮助你知道连接何时失败或丢失。我们将在 [ICE 连接状态](https://gjzkeyframe.github.io/posts/webrtc-signaling-video-call/#ice-connection-state) 中看到此示例的代码。
 
 `onicegatheringstatechange`
 
-当 ICE 代理收集候选的过程从一个状态转移到另一个状态（例如，开始收集候选或完成协商）时，ICE 层会向你发送 `icegatheringstatechange` 事件。有关详细信息，请参阅[ICE 收集状态](#ice-gathering-state)。
+当 ICE 代理收集候选的过程从一个状态转移到另一个状态（例如，开始收集候选或完成协商）时，ICE 层会向你发送 `icegatheringstatechange` 事件。有关详细信息，请参阅[ICE 收集状态](https://gjzkeyframe.github.io/posts/webrtc-signaling-video-call/#ice-gathering-state)。
 
 `onsignalingstatechange`
 
-当信令过程的状态发生变化（或信令服务器的连接发生变化）时，WebRTC 基础设施会发送 `signalingstatechange` 消息。有关详细信息，请参阅[信令状态](#signaling-state)。
+当信令过程的状态发生变化（或信令服务器的连接发生变化）时，WebRTC 基础设施会发送 `signalingstatechange` 消息。有关详细信息，请参阅[信令状态](https://gjzkeyframe.github.io/posts/webrtc-signaling-video-call/#signaling-state)。
 
 #### 开始协商
 
-一旦呼叫方创建了其 `RTCPeerConnection`，创建了媒体流，并如[开始通话](#starting-a-call)中所示将轨道添加到连接中，浏览器将向 `RTCPeerConnection` 触发 `negotiationneeded` 事件，以指示它已准备好开始与另一方协商。以下是我们的处理 `negotiationneeded` 事件的代码：
+一旦呼叫方创建了其 `RTCPeerConnection`，创建了媒体流，并如[开始通话](https://gjzkeyframe.github.io/posts/webrtc-signaling-video-call/#starting-a-call)中所示将轨道添加到连接中，浏览器将向 `RTCPeerConnection` 触发 `negotiationneeded` 事件，以指示它已准备好开始与另一方协商。以下是我们的处理 `negotiationneeded` 事件的代码：
 
 ```javascript
 function handleNegotiationNeededEvent() {
@@ -498,13 +498,13 @@ function handleVideoOfferMsg(msg) {
 }
 ```
 
-此代码非常类似于我们在[开始通话](#starting-a-call)中的 `invite()` 函数中所做的。它首先通过我们的 `createPeerConnection()` 函数创建和配置 `RTCPeerConnection`。然后它从收到的 `"video-offer"` 消息中获取 SDP 提议，并使用它创建一个新的 `RTCSessionDescription` 对象，表示呼叫方的会话描述。
+此代码非常类似于我们在[开始通话](https://gjzkeyframe.github.io/posts/webrtc-signaling-video-call/#starting-a-call)中的 `invite()` 函数中所做的。它首先通过我们的 `createPeerConnection()` 函数创建和配置 `RTCPeerConnection`。然后它从收到的 `"video-offer"` 消息中获取 SDP 提议，并使用它创建一个新的 `RTCSessionDescription` 对象，表示呼叫方的会话描述。
 
 然后将此会话描述传递给 `myPeerConnection.setRemoteDescription()`。这建立了收到的提议作为连接的远程（呼叫方）端的描述。如果成功，兑现处理程序（在 `then()` 子句中）使用 `getUserMedia()` 获取对被叫方的摄像头和麦克风的访问权限，将轨道添加到连接中，依此类推，正如我们在 `invite()` 中之前所做的。
 
 一旦使用 `myPeerConnection.createAnswer()` 创建了回答，通过调用 `myPeerConnection.setLocalDescription()` 设置本地连接描述为回答的 SDP，然后将回答通过信令服务器发送给呼叫方，以告知他们回答是什么。
 
-任何错误都将传递给 `handleGetUserMediaError()`，在[处理 `getUserMedia()` 错误](#handling-getusermedia-errors)中描述。
+任何错误都将传递给 `handleGetUserMediaError()`，在[处理 `getUserMedia()` 错误](https://gjzkeyframe.github.io/posts/webrtc-signaling-video-call/#handling-getusermedia-errors)中描述。
 
 **注意：**
 与呼叫方一样，一旦 `setLocalDescription()` 的兑现处理程序运行，浏览器开始触发 `icecandidate` 事件，这些事件需要被处理并传输给远程对等方。
@@ -536,7 +536,7 @@ function handleICECandidateEvent(event) {
 }
 ```
 
-这通过 `sendToServer()` 函数（在[向信令服务器发送消息](#sending-messages-to-the-signaling-server)中描述）构建一个包含候选的对象，并将其发送给另一方。消息的属性是：
+这通过 `sendToServer()` 函数（在[向信令服务器发送消息](https://gjzkeyframe.github.io/posts/webrtc-signaling-video-call/#sending-messages-to-the-signaling-server)中描述）构建一个包含候选的对象，并将其发送给另一方。消息的属性是：
 
 `type`
 
@@ -609,7 +609,7 @@ function handleRemoveTrackEvent(event) {
 
 此代码从 `"received_video"` `<video>` 元素的 `srcObject` 属性中获取传入视频 `MediaStream`，然后调用流的 `getTracks()` 方法以获取流的轨道数组。
 
-如果数组的长度为零，意味着流中没有轨道，我们通过调用 `closeVideoCall()` 结束通话。这会干净地将我们的应用恢复到可以再次开始或接收通话的状态。有关 `closeVideoCall()` 的工作原理，请参阅[结束通话](#ending-the-call)。
+如果数组的长度为零，意味着流中没有轨道，我们通过调用 `closeVideoCall()` 结束通话。这会干净地将我们的应用恢复到可以再次开始或接收通话的状态。有关 `closeVideoCall()` 的工作原理，请参阅[结束通话](https://gjzkeyframe.github.io/posts/webrtc-signaling-video-call/#ending-the-call)。
 
 #### 结束通话
 
