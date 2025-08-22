@@ -124,8 +124,8 @@ CFRelease(font);
 - 3、初始化要添加的 AVMetaDataItem。
 - 4、AVAssetWriter 添加来自 AVAssetWriterInputMetadataAdaptor 的 assetWriterInput。
 - 5、AVAssetWriter 进入写状态。
-- 5、使用 AVAssetReader 和 AVAssetWriterInputMetadataAdaptor 写入准备好的 Metadata。
-- 6、videoReaderOutput、audioReaderOutput、videoWriterInput、audioWriterInput 进入读写写状态。
+- 6、使用 AVAssetReader 和 AVAssetWriterInputMetadataAdaptor 写入准备好的 Metadata。
+- 7、videoReaderOutput、audioReaderOutput、videoWriterInput、audioWriterInput 进入读写写状态。
 - 8、读取完所有数据后，让 AVAssetReader 停止读取。使所有 AVAssetWriterInput 标记完成。
 - 9、等待 AVAssetWriter 变为完成状态，视频创建完成。
 
