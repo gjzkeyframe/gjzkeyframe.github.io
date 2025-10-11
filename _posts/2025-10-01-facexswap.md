@@ -8,6 +8,9 @@ tags: [AI 产品, 换脸, AI, AIGC, 视频, 照片, GIF]
 pin: false
 math: true
 mermaid: true
+image:
+  path: assets/resource/aigc-product/facexswap.png
+  alt: FaceXSwap App
 ---
 
 
