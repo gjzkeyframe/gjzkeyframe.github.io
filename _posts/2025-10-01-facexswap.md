@@ -71,6 +71,10 @@ _在 AppStore 搜索 'facexswap'_
 
 **(P.S. 友情提示：玩的时候请控制住笑声，并谨慎选择恶搞对象，以免遭遇现实中的“追杀”。)**
 
+- FaceXSwap 官网：[https://www.facexswap.com](https://www.facexswap.com)
+- FaceXSwap iOS App 下载：[https://apps.apple.com/app/id6752116909](https://apps.apple.com/app/id6752116909)
+
+---
 
 >想要学习 AI 技术的朋友，快来加入我们的<a href="https://t.zsxq.com/nd3Wj" target="_blank" rel="noopener noreferrer">【AI 赚钱社群】</a>，加入后你就能：
 >
