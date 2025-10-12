@@ -5,7 +5,7 @@ author: Keyframe
 date: 2025-02-22 08:28:08 +0800
 categories: [音视频基础知识]
 tags: [音视频基础知识, 音视频, 编解码, 封装格式, 传输协议]
-pin: true
+pin: false
 math: true
 mermaid: true
 ---
