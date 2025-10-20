@@ -4,7 +4,7 @@ description: FaceXSwap 这款 iOS 上的 AI 换脸神器，正在用一种“离
 author: Keyframe
 date: 2025-10-01 18:08:08 +0800
 categories: [AI 产品]
-tags: [AI 产品, 换脸, AI, AIGC, 视频, 照片, GIF]
+tags: [AI 产品, 换脸, AI, AIGC, 视频, 照片, GIF, FaceXSwap]
 pin: false
 math: true
 mermaid: true
