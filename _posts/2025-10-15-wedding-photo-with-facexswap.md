@@ -112,5 +112,5 @@ _和小李子的婚纱照_
 _在 AppStore 搜索 'facexswap'_
 
 
-- FaceXSwap 官网：[https://www.facexswap.com](https://www.facexswap.com)
+- FaceXSwap 官网：[https://facexswap.com](https://facexswap.com)
 - FaceXSwap iOS App 下载：[https://apps.apple.com/app/id6752116909](https://apps.apple.com/app/id6752116909)
