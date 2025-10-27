@@ -17,8 +17,17 @@ image:
 
 阿里在大模型上的发力真的很猛，不停的在开源各种各样的新模型，他们前一段时间开源的 Wan2.2 有点东西！
 
-![视频换人](assets/resource/aigc-product/replace-characters-2.mp4)
-_Wan2.2 视频换人_
+
+{%
+  include embed/video.html
+  src='assets/resource/aigc-product/replace-characters-2.mp4'
+  types='mp4'
+  poster=''
+  title='Wan2.2 视频换人'
+  autoplay=true
+  loop=true
+  muted=true
+%}
 
 一段你在说话的视频，一张相同分辨率的其他人物的图片，就能通过 AI 把视频中的你换成图片中的人物，让你不露脸就能换人出镜，这真是 i 人主播和博主的福音！这套技术理论上直接开直播问题也不大，再把音色换一换，死肥宅摇身一变性感美女，也可以去收割百万流量了。
 
