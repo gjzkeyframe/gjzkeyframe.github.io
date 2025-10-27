@@ -2,7 +2,7 @@
 title: 宅男秒变性感美女？阿里 Wan2.2 让你 1 条视频收割百万流量
 description: 一段你在说话的视频，一张相同分辨率的其他人物的图片，就能通过 AI 把视频中的你换成图片中的人物。
 author: Keyframe
-date: 2025-10-27 18:08:08 +0800
+date: 2025-10-26 08:08:08 +0800
 categories: [AI 产品]
 tags: [AI 产品, 换脸, AI, AIGC, 视频, 照片, GIF, Wan]
 pin: false
