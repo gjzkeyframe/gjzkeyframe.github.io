@@ -16,7 +16,7 @@ mermaid: true
 >- 1）获得全套 Stable Diffusion WebUI AI 图片和视频制作教程
 >- 2）获得全套 ComfyUI AI 图片和视频制作教程
 >- 3）获得自动化批量生产 AI 套图的程序
->- 4）获得 <a href="https://www.aigchub.ai" target="_blank" rel="noopener noreferrer">AIGCHub</a> 创作者资格，用 AI 生产图片和视频来赚钱
+>- 4）获得 <a href="https://aigchub.ai" target="_blank" rel="noopener noreferrer">AIGCHub</a> 创作者资格，用 AI 生产图片和视频来赚钱
 >
 >现在加入，送你一张 20 元优惠券：<a href="https://t.zsxq.com/nd3Wj" target="_blank" rel="noopener noreferrer">点击领取优惠券</a>
 >
