@@ -91,7 +91,7 @@ _Wan 生成新视频_
 
 如果你想要换脸生成新的图片、GIF、视频，你还可以使用 FaceXSwap：
 
-![在 AppStore 搜索 'facexswap'](resource/aigc-influence/aigc-influence-70/facexswap-2.png)
+![在 AppStore 搜索 'facexswap'](assets/resource/aigc-product/facexswap-2.png)
 _在 AppStore 搜索 'facexswap'_
 
 
