@@ -296,7 +296,7 @@ Civitai 是比较适合我们去寻找想要模型的站点，它把各种模型
 
 ![哩布哩布 AI 站](assets/resource/aigc-tutorial/install-sd-related-models/install-sd-related-models-002.png)
 
-- 炼丹阁：（[http://www.liandange.com/](http://www.liandange.com/)）
+- 炼丹阁：（[https://www.liandange.com/](https://www.liandange.com/)）
 
 ![炼丹阁站](assets/resource/aigc-tutorial/install-sd-related-models/install-sd-related-models-003.png)
 
