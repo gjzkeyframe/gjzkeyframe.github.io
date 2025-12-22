@@ -74,8 +74,8 @@ _在 AppStore 搜索 'facexswap'_
 
 **(P.S. 友情提示：玩的时候请控制住笑声，并谨慎选择恶搞对象，以免遭遇现实中的“追杀”。)**
 
-- FaceXSwap 官网：[https://facexswap.com](https://facexswap.com)
-- FaceXSwap iOS App 下载：[https://apps.apple.com/app/id6752116909](https://apps.apple.com/app/id6752116909)
+- FaceXSwap 官网：<a href="https://www.facexswap.com" target="_blank">FaceXSwap: On-Device Offline AI Face Swap for Free</a>
+- FaceXSwap iOS App 下载：<a href="https://apps.apple.com/app/id6752116909  " target="_blank">FaceXSwap iOS App Download</a>
 
 ---
 
