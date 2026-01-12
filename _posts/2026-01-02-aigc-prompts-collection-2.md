@@ -183,9 +183,9 @@ End on the fully exploded, clearly labeled ingredient view.
 
 ---
 
-推荐一款端侧离线换脸工具，如果你想快速二创人物作品，可以使用 **FaceXSwap** 在手机端换脸实现即可：
+推荐一款端侧离线换脸工具，如果你想快速二创人物作品，可以使用 [FaceXSwap](https://www.facexswap.com) 在手机端换脸实现即可：
 
-![FaceXSwap 换脸生成作品](assets/resource/aigc-prompt/aigc-prompt-1-10.gif)
+![FaceXSwap 换脸生成作品](assets/resource/aigc-product/facexswap_preview_short.gif)
 _FaceXSwap 换脸生成作品_
 
 ![在 AppStore 搜索 'facexswap'](assets/resource/aigc-product/facexswap-2.png)

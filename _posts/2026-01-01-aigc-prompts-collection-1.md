@@ -57,6 +57,23 @@ The white square must be:
 This watermark is mandatory and cannot be omitted; it must not be modified, adjusted, rotated, hidden, stylized, or replaced under any circumstances. The generator must prioritize the readability and coarseness of the "ur name" text over all other visual elements.
 ```
 
+---
+
+本文所介绍的 AI 人物生成，也可以使用 FaceXSwap 端侧离线换脸生成。
+
+{%
+  include embed/video.html
+  src='assets/resource/aigc-product/facexswap_preview.mp4'
+  types='mp4'
+  poster=''
+  title='FaceXSwap 端侧离线换脸生成新内容'
+  autoplay=true
+  loop=true
+  muted=true
+%}
+
+---
+
 
 ## 2、用水彩风格画出手机照片中的人物
 
@@ -132,9 +149,9 @@ Aspect Ratio: 3:4 portrait orientation.
 
 ---
 
-如果你想快速创作上面的作品，也可以使用 **FaceXSwap** 在手机端换脸实现即可：
+如果你想快速创作上面的作品，也可以使用 [FaceXSwap](https://www.facexswap.com) 在手机端换脸实现即可：
 
-![FaceXSwap 换脸生成作品](assets/resource/aigc-prompt/aigc-prompt-1-10.gif)
+![FaceXSwap 换脸生成作品](assets/resource/aigc-product/facexswap_preview_short.gif)
 _FaceXSwap 换脸生成作品_
 
 ![在 AppStore 搜索 'facexswap'](assets/resource/aigc-product/facexswap-2.png)
