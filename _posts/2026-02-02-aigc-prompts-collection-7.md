@@ -15,7 +15,7 @@ image:
 
 
 
-## 1、K-Pop视觉美学四宫格
+## 1、K-Pop 视觉美学四宫格
 
 Gemini Nano Banana Pro 出图示例：
 
